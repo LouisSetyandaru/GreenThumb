@@ -8,17 +8,30 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var selection: Tab = .home
+
+    enum Tab {
+        case home
+        case list
+    }
+
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hell, cobA TOK NGGEH")
+        TabView(selection: $selection) {
+            HomeView()
+                .tabItem {
+                    Label("Home", systemImage: "house")
+                }
+                .tag(Tab.home)
+
+            Text("List View Placeholder")
+                .tabItem {
+                    Label("List", systemImage: "list.bullet")
+                }
+                .tag(Tab.list)
         }
-        .padding()
     }
 }
 
 #Preview {
-    ContentView()
+    ContentView().environment(ModelData())
 }

@@ -8,20 +8,20 @@
 import SwiftUI
 
 struct PlantCard: View {
+    var plant: Plant
     var body: some View {
         VStack(alignment: .center) {
             
             HStack(alignment: .center) {
-                Text("Monstera")
+                Text(plant.name)
                     .font(.callout)
                     .fontWeight(.semibold)
                     .foregroundColor(Color(red: 0.28627450980392155, green: 0.5215686274509804, blue: 0.3254901960784314))
-                    .multilineTextAlignment(.leading)
                     .padding(.top, 40.0)
                     
                 
                 
-               CircleImage(image: Image("tanaman2"))
+                CircleImage(image: Image(plant.image))
                     .frame(width: 70,height: 80)
             }
             .frame(width: 180, height: 90)
@@ -38,7 +38,7 @@ struct PlantCard: View {
             HStack {
                 VStack(alignment: .leading) {
                     
-                    Text("Monstera is a type of tropical plant that is popular")
+                    Text(plant.description)
                         .font(.footnote)
                         .foregroundColor(.gray)
                         .padding(.bottom, 20.0)
@@ -58,8 +58,12 @@ struct PlantCard: View {
 }
 
 #Preview {
+    let plants = ModelData().plants
     
-    PlantCard()
+    return Group {
+        PlantCard(plant: plants[1])
+
+    }
     
 
 }

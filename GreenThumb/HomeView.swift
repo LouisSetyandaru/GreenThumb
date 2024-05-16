@@ -17,105 +17,105 @@ struct HomeView: View {
     }
     
     var filteredPlants: [Plant] {
-        switch selectedFilter {
-        case .all:
-            return modelData.plants
-        case .outdoors:
-            return modelData.plants.filter { $0.isOutdoor }
-        case .indoors:
-            return modelData.plants.filter { !$0.isOutdoor }
+        let filtered = modelData.plants.filter { plant in
+            (selectedFilter == .all || (selectedFilter == .outdoors && plant.isOutdoor) || (selectedFilter == .indoors && !plant.isOutdoor)) &&
+            (searchText.isEmpty || plant.name.lowercased().contains(searchText.lowercased()))
         }
+        return filtered
     }
     
     var body: some View {
-        VStack(alignment: .leading) {
-            HStack {
-                TextField("Search", text: $searchText)
-                    .padding(.leading, 24)
-                    .frame(height: 40)
-                    .background(Color(.systemGray6))
-                    .cornerRadius(8)
-                    .overlay(
-                        HStack {
-                            Image(systemName: "magnifyingglass")
-                            Spacer()
-                        }
-                        .padding(.horizontal, 8)
-                        .foregroundColor(.gray)
-                    )
-                
-                Button(action: {
-                    // Notification action
-                }) {
-                    Image(systemName: "bell")
-                        .padding()
-                }
-            }
-            .padding()
-            
-            HStack {
-                Button(action: {
-                    selectedFilter = .all
-                }) {
-                    Text("All")
-                        .padding()
-                        .padding(.horizontal, 10.0)
-                        .background(selectedFilter == .all ? Color(red: 73/255, green: 133/255, blue: 83/255) : Color.clear)
-                        .foregroundColor(selectedFilter == .all ? Color.white : Color.black)
-                        .cornerRadius(8)
-                }
-                .padding()
-                
-                Button(action: {
-                    selectedFilter = .outdoors
-                }) {
-                    Text("Outdoors")
-                        .padding()
-                        .background(selectedFilter == .outdoors ? Color(red: 73/255, green: 133/255, blue: 83/255) : Color.clear)
-                        .foregroundColor(selectedFilter == .outdoors ? Color.white : Color.black)
-                        .cornerRadius(8)
-                }
-                
-                Button(action: {
-                    selectedFilter = .indoors
-                }) {
-                    Text("Indoors")
-                        .padding()
-                        .background(selectedFilter == .indoors ? Color(red: 73/255, green: 133/255, blue: 83/255) : Color.clear)
-                        .foregroundColor(selectedFilter == .indoors ? Color.white : Color.black)
-                        .cornerRadius(8)
-                }
-            }
-            .padding(.horizontal)
-            
-            Text("Featured Plants")
-                .font(.title2)
-                .fontWeight(.bold)
-                .padding(.horizontal)
-            
-            ScrollView(.horizontal, showsIndicators: false) {
+        ScrollView {
+            VStack(alignment: .leading) {
                 HStack {
-//                    ForEach(filteredPlants) { plant in
-//                        PlantCard(plant: plant)
-//                            .frame(width: 200)
-//                            .padding(.leading)
-//                    }
+                    TextField("Search", text: $searchText)
+                        .padding(.leading, 40.0)
+                        .frame(height: 40)
+                        .background(Color(.systemGray6))
+                        .cornerRadius(8)
+                        .overlay(
+                            HStack {
+                                Image(systemName: "magnifyingglass")
+                                Spacer()
+                            }
+                                .padding(.horizontal,11.0)
+                                .foregroundColor(.gray)
+                        )
                     
-                    PlantCard()
-                    
-                    PlantCard()
-                    
-                    PlantCard()
+                    Button(action: {
+                        // Notification action
+                    }) {
+                        Image(systemName: "bell")
+                            .padding()
+                    }
                 }
                 .padding()
                 
+                HStack(alignment: .center) {
+                    Button(action: {
+                        selectedFilter = .all
+                    }) {
+                        Text("All")
+                            .padding()
+                            .padding(.horizontal, 10.0)
+                            .background(selectedFilter == .all ? Color(red: 73/255, green: 133/255, blue: 83/255) : Color.clear)
+                            .foregroundColor(selectedFilter == .all ? Color.white : Color.black)
+                            .cornerRadius(8)
+                    }
+                    
+                    Button(action: {
+                        selectedFilter = .outdoors
+                    }) {
+                        Text("Outdoors")
+                            .padding()
+                            .background(selectedFilter == .outdoors ? Color(red: 73/255, green: 133/255, blue: 83/255) : Color.clear)
+                            .foregroundColor(selectedFilter == .outdoors ? Color.white : Color.black)
+                            .cornerRadius(8)
+                    }
+                    
+                    Button(action: {
+                        selectedFilter = .indoors
+                    }) {
+                        Text("Indoors")
+                            .padding()
+                            .background(selectedFilter == .indoors ? Color(red: 73/255, green: 133/255, blue: 83/255) : Color.clear)
+                            .foregroundColor(selectedFilter == .indoors ? Color.white : Color.black)
+                            .cornerRadius(8)
+                    }
+                }
+                .padding([.bottom, .trailing])
+                .padding(.leading, 25.0)
+                
+                Text("Featured Plants")
+                    .font(.title2)
+                    .fontWeight(.bold)
+                    .padding(.horizontal)
+                
+                ScrollView(.horizontal, showsIndicators: false) {
+                    HStack {
+                        ForEach(modelData.plants.filter { $0.isFeatured }) { plant in
+                            PlantCard(plant: plant)
+                        }
+                    }
+                    .padding()
+                }
+                
+                Text("All Plants")
+                    .font(.title2)
+                    .fontWeight(.bold)
+                    .padding(.horizontal)
+                
+                ForEach(filteredPlants) { plant in
+                    PlantCardV2(plant: plant)
+                }
+                .padding(.leading, 20.0)
+                .padding(.bottom, 9)
+                
+                Spacer()
             }
-            
-            Spacer()
         }
     }
 }
-
 #Preview {
     HomeView().environment(ModelData())
 }

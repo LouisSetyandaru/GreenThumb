@@ -19,7 +19,8 @@ struct Plant: Hashable, Codable, Identifiable {
     var plantingAge: Int
     var wateringTime: String
     var plantingSteps: String
-    var isWatered: Bool // Atribut baru
+    var isWatered: Bool
+    var image: String
     
 //    private var imageName: String
 //    var image: Image {
