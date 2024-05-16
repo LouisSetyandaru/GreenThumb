@@ -20,6 +20,12 @@
 		0465AAFA2BEF7FFA001331D1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0465AAF92BEF7FFA001331D1 /* ContentView.swift */; };
 		0465AAFC2BEF7FFC001331D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0465AAFB2BEF7FFC001331D1 /* Assets.xcassets */; };
 		0465AAFF2BEF7FFC001331D1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0465AAFE2BEF7FFC001331D1 /* Preview Assets.xcassets */; };
+		A29CBA5B2BF5EE5D00DE2F8F /* Plant.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29CBA5A2BF5EE5D00DE2F8F /* Plant.swift */; };
+		A2B431852BF5F3210075FE10 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B431842BF5F3210075FE10 /* ModelData.swift */; };
+		A2B4318A2BF5F3860075FE10 /* PlantCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B431892BF5F3860075FE10 /* PlantCard.swift */; };
+		A2B4318C2BF607760075FE10 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B4318B2BF607760075FE10 /* CircleImage.swift */; };
+		A2B4318E2BF610AD0075FE10 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B4318D2BF610AD0075FE10 /* HomeView.swift */; };
+		A2B431902BF614A70075FE10 /* plantData.json in Resources */ = {isa = PBXBuildFile; fileRef = A2B4318F2BF614A60075FE10 /* plantData.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +70,12 @@
 		0465AAFB2BEF7FFC001331D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0465AAFE2BEF7FFC001331D1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0465AB002BEF7FFC001331D1 /* MacOS_GreenThumb.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MacOS_GreenThumb.entitlements; sourceTree = "<group>"; };
+		A29CBA5A2BF5EE5D00DE2F8F /* Plant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plant.swift; sourceTree = "<group>"; };
+		A2B431842BF5F3210075FE10 /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
+		A2B431892BF5F3860075FE10 /* PlantCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantCard.swift; sourceTree = "<group>"; };
+		A2B4318B2BF607760075FE10 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
+		A2B4318D2BF610AD0075FE10 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		A2B4318F2BF614A60075FE10 /* plantData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = plantData.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,7 +127,12 @@
 		0465AAC62BEE0C81001331D1 /* GreenThumb */ = {
 			isa = PBXGroup;
 			children = (
+				A2B431912BF618840075FE10 /* Helper */,
+				A2B431862BF5F3640075FE10 /* PlantView */,
+				A29CBA5D2BF5EE7900DE2F8F /* Model */,
+				A29CBA5C2BF5EE6900DE2F8F /* Data */,
 				0465AAC72BEE0C81001331D1 /* GreenThumbApp.swift */,
+				A2B4318D2BF610AD0075FE10 /* HomeView.swift */,
 				0465AAC92BEE0C81001331D1 /* ContentView.swift */,
 				0465AACB2BEE0C83001331D1 /* Assets.xcassets */,
 				0465AACD2BEE0C83001331D1 /* Preview Content */,
@@ -168,6 +185,39 @@
 				0465AAFE2BEF7FFC001331D1 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A29CBA5C2BF5EE6900DE2F8F /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				A2B4318F2BF614A60075FE10 /* plantData.json */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		A29CBA5D2BF5EE7900DE2F8F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A29CBA5A2BF5EE5D00DE2F8F /* Plant.swift */,
+				A2B431842BF5F3210075FE10 /* ModelData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A2B431862BF5F3640075FE10 /* PlantView */ = {
+			isa = PBXGroup;
+			children = (
+				A2B431892BF5F3860075FE10 /* PlantCard.swift */,
+			);
+			path = PlantView;
+			sourceTree = "<group>";
+		};
+		A2B431912BF618840075FE10 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				A2B4318B2BF607760075FE10 /* CircleImage.swift */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -293,6 +343,7 @@
 			files = (
 				0465AACF2BEE0C83001331D1 /* Preview Assets.xcassets in Resources */,
 				0465AACC2BEE0C83001331D1 /* Assets.xcassets in Resources */,
+				A2B431902BF614A70075FE10 /* plantData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -329,7 +380,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				0465AACA2BEE0C81001331D1 /* ContentView.swift in Sources */,
+				A29CBA5B2BF5EE5D00DE2F8F /* Plant.swift in Sources */,
+				A2B431852BF5F3210075FE10 /* ModelData.swift in Sources */,
+				A2B4318C2BF607760075FE10 /* CircleImage.swift in Sources */,
+				A2B4318E2BF610AD0075FE10 /* HomeView.swift in Sources */,
 				0465AAC82BEE0C81001331D1 /* GreenThumbApp.swift in Sources */,
+				A2B4318A2BF5F3860075FE10 /* PlantCard.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -489,6 +545,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"GreenThumb/Preview Content\"";
+				DEVELOPMENT_TEAM = 589T97F4D3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -496,6 +553,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -524,6 +582,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
