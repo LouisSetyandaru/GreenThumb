@@ -21,6 +21,7 @@ struct Plant: Hashable, Codable, Identifiable {
     var plantingSteps: String
     var isWatered: Bool
     var image: String
+    var isOnList: Bool
     
 //    private var imageName: String
 //    var image: Image {
