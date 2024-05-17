@@ -27,14 +27,7 @@ struct PlantCard: View {
             .frame(width: 180, height: 90)
             .background(Color(.systemGreen).opacity(0.11))
             .cornerRadius(15)
-
-            
-
-            
-            
-
-          
-            
+              
             HStack {
                 VStack(alignment: .leading) {
                     
@@ -64,8 +57,6 @@ struct PlantCard: View {
         PlantCard(plant: plants[1])
 
     }
-    
-
 }
 
 
