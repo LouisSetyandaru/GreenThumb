@@ -15,9 +15,6 @@ struct DetailPlantView: View {
         ScrollView {
             ZStack {
                 
-                CircleImage(image: Image("ic_back"))
-                    .frame(width: 30, height: 30)
-                    .offset(x: -150, y: -200)
                 
                 VStack {
                     
@@ -34,10 +31,10 @@ struct DetailPlantView: View {
                                 .offset(x: -30, y: -200)
                             
                             CircleImage(image: Image(plant.image))
-                                .frame(width: 10, height: 400)
+                                .frame(width: 16.0, height: 550.0)
                                 .padding(.leading, 20) // Reduced padding
-                                .padding(.trailing, 20)
-                                .offset(x: -30)
+                                .padding([.bottom, .trailing], 20)
+                                .offset(x: -106,y: 0)
                         }
                         
                         VStack(alignment: .leading) {
@@ -165,7 +162,7 @@ func formatPlantingSteps(_ steps: String) -> String {
     let stepsArray = steps.split(separator: " ")
     var formattedSteps = ""
     
-    for (index, step) in stepsArray.enumerated() {
+    for (_, step) in stepsArray.enumerated() {
         if step.hasSuffix(".") && (step.dropLast().allSatisfy { $0.isNumber }) {
             formattedSteps += "\n\(step) "
         } else {
