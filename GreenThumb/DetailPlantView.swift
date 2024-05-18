@@ -16,8 +16,8 @@ struct DetailPlantView: View {
             ZStack {
                 
                 CircleImage(image: Image("ic_back"))
-                .frame(width: 30, height: 30)
-                .offset(x: -150, y: -200)
+                    .frame(width: 30, height: 30)
+                    .offset(x: -150, y: -200)
                 
                 VStack {
                     
@@ -25,46 +25,76 @@ struct DetailPlantView: View {
                     
                     HStack {
                         
+                        
                         ZStack {
                             
                             Circle()
                                 .fill(Color(red: 0.28627450980392155, green: 0.5215686274509804, blue: 0.3254901960784314).opacity(0.11))
                                 .frame(width: 300.0, height: 300.0)
-                                .offset(x: -70, y: -200)
+                                .offset(x: -30, y: -200)
                             
-                            // Plant Image
                             CircleImage(image: Image(plant.image))
-                                .frame(width: 100, height: 400)
-                                .padding(.leading)
-                                .padding(.trailing, 110.0)
+                                .frame(width: 10, height: 400)
+                                .padding(.leading, 20) // Reduced padding
+                                .padding(.trailing, 20)
                                 .offset(x: -30)
                         }
                         
                         VStack(alignment: .leading) {
                             
                             Text("Age")
-                                .font(.callout)
+                                .font(.footnote)
                                 .foregroundColor(.gray)
                                 .padding(.bottom, 10.0)
                             
                             Text("\(plant.age)")
-                                .font(.callout)
+                                .font(.footnote)
                                 .fontWeight(.semibold)
                                 .foregroundColor(Color(red: 0.2, green: 0.5, blue: 0.3))
                                 .padding(.bottom, 20.0)
                             
-                            Text("Watering Time")
-                                .font(.callout)
+                            Text("Latin name")
+                                .font(.footnote)
                                 .foregroundColor(.gray)
                                 .padding(.bottom, 10.0)
                             
-                            Text("\(plant.wateringTime)")
-                                .font(.callout)
+                            Text("\(plant.latin_name)")
+                                .font(.footnote)
                                 .fontWeight(.semibold)
                                 .foregroundColor(Color(red: 0.2, green: 0.5, blue: 0.3))
                                 .padding(.bottom, 20.0)
+                            
+                            Text("Type")
+                                .font(.footnote)
+                                .foregroundColor(.gray)
+                                .padding(.bottom, 10.0)
+                            
+                            Text("\(plant.plant_type)")
+                                .font(.footnote)
+                                .fontWeight(.semibold)
+                                .foregroundColor(Color(red: 0.2, green: 0.5, blue: 0.3))
+                                .padding(.bottom, 20.0)
+                            
+                            Text("Habitat")
+                                .font(.footnote)
+                                .foregroundColor(.gray)
+                                .padding(.bottom, 10.0)
+                            
+                            Text("\(plant.habitat)")
+                                .font(.footnote)
+                                .fontWeight(.semibold)
+                                .foregroundColor(Color(red: 0.2, green: 0.5, blue: 0.3))
+                                .padding(.bottom, 20.0)
+                            
+                            Spacer().frame(height: 60)
+                            
                         }
+                        .frame(width: 100.0)
+                        
+                        Spacer().frame(width: 50)
+                        
                     }
+                    .frame(width: 400.0, height: 500.0)
                 }
                 .frame(width: 400.0, height: 500.0)
                 .background(Color(.systemGreen).opacity(0.1))
@@ -74,6 +104,8 @@ struct DetailPlantView: View {
                     Spacer().frame(height: 750)
                     ZStack {
                         VStack {
+                            
+                            Spacer().frame(height: 20)
                             
                             Text(plant.name)
                                 .font(.callout)
@@ -98,12 +130,14 @@ struct DetailPlantView: View {
                                 .padding(.vertical, 20.0)
                                 .frame(maxWidth: 350.0, alignment: .leading)
                             
-                            Text(plant.plantingSteps)
+                            Text(formatPlantingSteps(plant.plantingSteps))
                                 .font(.footnote)
                                 .foregroundColor(.gray)
-                                .padding(.bottom, 20.0)
                                 .padding(.horizontal, 6)
                                 .frame(maxWidth: 350.0, alignment: .leading)
+                            
+                            
+                            Spacer()
                             
                             Text("Plant This")
                                 .padding()
@@ -112,7 +146,7 @@ struct DetailPlantView: View {
                                 .foregroundColor(Color.white)
                                 .cornerRadius(20)
                             
-                            Spacer().frame(height: 75)
+                            Spacer().frame(height: 30)
                         }
                         .frame(width: 400.0, height: 400.0)
                         .background(Color.white)
@@ -126,6 +160,22 @@ struct DetailPlantView: View {
         
     }
 }
+
+func formatPlantingSteps(_ steps: String) -> String {
+    let stepsArray = steps.split(separator: " ")
+    var formattedSteps = ""
+    
+    for (index, step) in stepsArray.enumerated() {
+        if step.hasSuffix(".") && (step.dropLast().allSatisfy { $0.isNumber }) {
+            formattedSteps += "\n\(step) "
+        } else {
+            formattedSteps += "\(step) "
+        }
+    }
+    
+    return formattedSteps.trimmingCharacters(in: .whitespacesAndNewlines)
+}
+
 
 #Preview {
     let plants = ModelData().plants
