@@ -23,7 +23,8 @@ struct ContentView: View {
                 }
                 .tag(Tab.home)
 
-            Text("List View Placeholder")
+                
+                MyPlantsView()
                 .tabItem {
                     Label("List", systemImage: "list.bullet")
                 }

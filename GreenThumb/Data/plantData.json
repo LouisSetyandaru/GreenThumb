@@ -2,6 +2,9 @@
     {
         "id": 1,
         "name": "Mawar",
+        "plant_type": "Bunga",
+        "latin_name": "Rosa",
+        "habitat": "Iklim sedang",
         "description": "Mawar adalah tanaman bunga yang berasal dari belahan bumi utara dan biasanya tumbuh di daerah yang beriklim sedang.",
         "isFeatured": true,
         "isOutdoor": true,
@@ -10,12 +13,15 @@
         "wateringTime": "07:00",
         "plantingSteps": "1. Pilih lokasi yang cerah. 2. Gali lubang sedalam 30 cm. 3. Tanam bibit mawar. 4. Siram secara teratur.",
         "isWatered": true,
-        "isOnList": false,
-        "image": "mawar"
+        "image": "mawar",
+        "isOnList": false
     },
     {
         "id": 2,
         "name": "Lidah Buaya",
+        "plant_type": "Sukulen",
+        "latin_name": "Aloe vera",
+        "habitat": "Tropis dan subtropis",
         "description": "Lidah buaya adalah tanaman yang berasal dari daerah tropis dan subtropis, dikenal karena manfaatnya untuk kesehatan kulit.",
         "isFeatured": false,
         "isOutdoor": false,
@@ -24,12 +30,15 @@
         "wateringTime": "08:00",
         "plantingSteps": "1. Siapkan pot dengan tanah berpasir. 2. Tanam anakan lidah buaya. 3. Letakkan di tempat yang terkena sinar matahari tidak langsung. 4. Siram secukupnya.",
         "isWatered": true,
-        "isOnList": false,
-        "image": "lidah_buaya"
+        "image": "lidah_buaya",
+        "isOnList": false
     },
     {
         "id": 3,
         "name": "Anggrek",
+        "plant_type": "Bunga",
+        "latin_name": "Orchidaceae",
+        "habitat": "Tropis dan subtropis",
         "description": "Anggrek adalah tanaman hias yang berasal dari kawasan tropis dan subtropis, dikenal karena keindahan bunganya.",
         "isFeatured": false,
         "isOutdoor": false,
@@ -38,12 +47,15 @@
         "wateringTime": "09:00",
         "plantingSteps": "1. Siapkan pot dengan media tanam khusus anggrek. 2. Tanam bibit anggrek. 3. Letakkan di tempat yang teduh. 4. Siram dengan air yang mengalir.",
         "isWatered": false,
-        "isOnList": true,
-        "image": "anggrek"
+        "image": "anggrek",
+        "isOnList": true
     },
     {
         "id": 4,
         "name": "Tomat",
+        "plant_type": "Buah",
+        "latin_name": "Solanum lycopersicum",
+        "habitat": "Amerika Selatan",
         "description": "Tomat adalah tanaman buah yang berasal dari Amerika Selatan, sering digunakan dalam berbagai masakan.",
         "isFeatured": false,
         "isOutdoor": true,
@@ -52,12 +64,15 @@
         "wateringTime": "06:00",
         "plantingSteps": "1. Siapkan bibit tomat. 2. Tanam di tanah yang subur. 3. Siram secara teratur. 4. Beri pupuk setiap dua minggu.",
         "isWatered": true,
-        "isOnList": false,
-        "image": "tomat"
+        "image": "tomat",
+        "isOnList": false
     },
     {
         "id": 5,
         "name": "Kaktus",
+        "plant_type": "Sukulen",
+        "latin_name": "Cactaceae",
+        "habitat": "Daerah kering di Amerika",
         "description": "Kaktus adalah tanaman yang berasal dari daerah kering di Amerika, dikenal karena kemampuannya menyimpan air.",
         "isFeatured": false,
         "isOutdoor": true,
@@ -66,12 +81,15 @@
         "wateringTime": "18:00",
         "plantingSteps": "1. Pilih pot dengan drainase baik. 2. Tanam kaktus di tanah yang berpasir. 3. Letakkan di tempat yang terkena sinar matahari langsung. 4. Siram sangat jarang.",
         "isWatered": false,
-        "isOnList": false,
-        "image": "kaktus"
+        "image": "kaktus",
+        "isOnList": false
     },
     {
         "id": 6,
         "name": "Mint",
+        "plant_type": "Herbal",
+        "latin_name": "Mentha",
+        "habitat": "Eropa dan Asia",
         "description": "Mint adalah tanaman yang berasal dari daerah Eropa dan Asia, sering digunakan sebagai bumbu dan untuk minuman.",
         "isFeatured": false,
         "isOutdoor": false,
@@ -80,12 +98,15 @@
         "wateringTime": "07:30",
         "plantingSteps": "1. Siapkan pot dengan tanah yang subur. 2. Tanam bibit mint. 3. Letakkan di tempat yang teduh. 4. Siram secara teratur.",
         "isWatered": false,
-        "isOnList": false,
-        "image": "mint"
+        "image": "mint",
+        "isOnList": false
     },
     {
         "id": 7,
         "name": "Bambu",
+        "plant_type": "Rumput-rumputan",
+        "latin_name": "Bambusoideae",
+        "habitat": "Asia Timur",
         "description": "Bambu adalah tanaman yang berasal dari Asia Timur, dikenal karena pertumbuhannya yang cepat dan kekuatannya.",
         "isFeatured": true,
         "isOutdoor": true,
@@ -94,12 +115,15 @@
         "wateringTime": "05:00",
         "plantingSteps": "1. Pilih lokasi yang luas. 2. Tanam bibit bambu di tanah yang subur. 3. Siram secara teratur. 4. Beri pupuk organik setiap bulan.",
         "isWatered": true,
-        "isOnList": true,
-        "image": "bambu"
+        "image": "bambu",
+        "isOnList": true
     },
     {
         "id": 8,
         "name": "Lavender",
+        "plant_type": "Herbal",
+        "latin_name": "Lavandula",
+        "habitat": "Mediterania",
         "description": "Lavender adalah tanaman yang berasal dari kawasan Mediterania, dikenal karena aroma dan manfaatnya sebagai pengusir serangga.",
         "isFeatured": false,
         "isOutdoor": true,
@@ -108,12 +132,15 @@
         "wateringTime": "08:30",
         "plantingSteps": "1. Siapkan tanah yang berpasir. 2. Tanam bibit lavender. 3. Letakkan di tempat yang terkena sinar matahari penuh. 4. Siram secukupnya.",
         "isWatered": true,
-        "isOnList": false,
-        "image": "lavender"
+        "image": "lavender",
+        "isOnList": false
     },
     {
         "id": 9,
         "name": "Bunga Matahari",
+        "plant_type": "Bunga",
+        "latin_name": "Helianthus",
+        "habitat": "Amerika Utara",
         "description": "Bunga matahari adalah tanaman yang berasal dari Amerika Utara, dikenal karena bunganya yang besar dan berwarna kuning cerah.",
         "isFeatured": true,
         "isOutdoor": true,
@@ -122,7 +149,7 @@
         "wateringTime": "09:30",
         "plantingSteps": "1. Siapkan pot dengan tanah yang subur dan drainase baik. 2. Tanam biji bunga matahari. 3. Letakkan di tempat yang terkena sinar matahari langsung. 4. Siram secara teratur.",
         "isWatered": false,
-        "isOnList": true,
-        "image": "bungamatahari"
+        "image": "bungamatahari",
+        "isOnList": true
     }
 ]

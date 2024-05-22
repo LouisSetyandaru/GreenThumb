@@ -12,6 +12,9 @@ import SwiftUI
 struct Plant: Hashable, Codable, Identifiable {
     var id: Int
     var name: String
+    var plant_type: String
+    var latin_name: String
+    var habitat: String
     var description: String
     var isFeatured: Bool
     var isOutdoor: Bool

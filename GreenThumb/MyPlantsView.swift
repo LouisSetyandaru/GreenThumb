@@ -17,7 +17,6 @@ struct MyPlantsView: View {
     }
 
     
-    
     var body: some View {
         ScrollView {
             VStack(alignment: .leading) {
@@ -48,7 +47,6 @@ struct MyPlantsView: View {
                 HStack(alignment: .center) {
                     
                     
-                   
                     
             
                 }
