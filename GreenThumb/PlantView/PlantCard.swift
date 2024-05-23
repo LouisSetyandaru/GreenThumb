@@ -44,7 +44,7 @@ struct PlantCard: View {
 
             
         }
-        .background(Color(.systemGreen).opacity(0.1))
+        .background(Color(red: 233/255, green: 243/255, blue: 237/255))
         .frame(width: 180.0, height: 180.0)
         .cornerRadius(15)
     }
@@ -54,7 +54,7 @@ struct PlantCard: View {
     let plants = ModelData().plants
     
     return Group {
-        PlantCard(plant: plants[1])
+        PlantCard(plant: plants[8])
 
     }
 }

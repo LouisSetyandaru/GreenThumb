@@ -38,6 +38,7 @@
 		A2F598652BFE00E400104959 /* plantData.json in Resources */ = {isa = PBXBuildFile; fileRef = A2B4318F2BF614A60075FE10 /* plantData.json */; };
 		A2F598672BFE1A8300104959 /* HomeViewMac.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F598662BFE1A8300104959 /* HomeViewMac.swift */; };
 		A2F598692BFE1DE400104959 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B431842BF5F3210075FE10 /* ModelData.swift */; };
+		A2F8A2712BFEEB3D00B7C307 /* PlantCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B431892BF5F3860075FE10 /* PlantCard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -432,6 +433,7 @@
 				A20A62FB2BFE26E300963A72 /* GreenThumbApp.swift in Sources */,
 				A2F598622BFE00E400104959 /* Plant.swift in Sources */,
 				A2F598672BFE1A8300104959 /* HomeViewMac.swift in Sources */,
+				A2F8A2712BFEEB3D00B7C307 /* PlantCard.swift in Sources */,
 				A2F5985A2BFDFF9900104959 /* PlantCardMacOS.swift in Sources */,
 				A2F598632BFE00E400104959 /* CircleImage.swift in Sources */,
 			);
