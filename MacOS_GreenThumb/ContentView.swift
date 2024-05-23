@@ -17,15 +17,18 @@ struct ContentView: View {
     }
 
     var body: some View {
-        TabView(selection: $selection) {
+        
             HomeViewMac()
                 .tabItem {
                     Label("Home", systemImage: "house")
                 }
                 .tag(Tab.home)
+                .frame(maxWidth: 1445)
 
            
-        }
+        
+        .background(Color(red: 249/255, green: 249/255, blue: 249/255))
+        
     }
 }
 

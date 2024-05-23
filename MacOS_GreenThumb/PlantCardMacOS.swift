@@ -52,13 +52,16 @@ struct PlantCardMacOS: View {
            
             
             CircleImage(image: Image(plant.image))
-                .frame(width: 338.0, height: 338.0)
+                .frame(width: 320.0, height: 320.0)
 
         }
         .background(Color(red: 233/255, green: 243/255, blue: 237/255))
         .cornerRadius(10)
+        .frame(minWidth: 900, minHeight: 300)
+        .frame(maxWidth: 950, maxHeight: 320)
         .padding()
-        .frame(minWidth: 958, minHeight: 338)
+
+
     }
     
 }
