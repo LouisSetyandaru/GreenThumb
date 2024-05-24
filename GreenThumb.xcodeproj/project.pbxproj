@@ -19,6 +19,7 @@
 		0465AAFA2BEF7FFA001331D1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0465AAF92BEF7FFA001331D1 /* ContentView.swift */; };
 		04E186CE2BF72D1100779890 /* MyPlantsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E186CD2BF72D1100779890 /* MyPlantsView.swift */; };
 		04E186D02BF72EE900779890 /* PlantCardBasah.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E186CF2BF72EE900779890 /* PlantCardBasah.swift */; };
+		241DE1DB2BFFA6EF0039DF11 /* DetailViewMac.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241DE1DA2BFFA6EF0039DF11 /* DetailViewMac.swift */; };
 		24A646CF2BF79E80004C0906 /* DetailPlantView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24A646CE2BF79E80004C0906 /* DetailPlantView.swift */; };
 		A20A62F92BFE1E5E00963A72 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0465AACB2BEE0C83001331D1 /* Assets.xcassets */; };
 		A20A62FA2BFE26E300963A72 /* GreenThumbApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0465AAC72BEE0C81001331D1 /* GreenThumbApp.swift */; };
@@ -82,6 +83,7 @@
 		0465AB002BEF7FFC001331D1 /* MacOS_GreenThumb.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MacOS_GreenThumb.entitlements; sourceTree = "<group>"; };
 		04E186CD2BF72D1100779890 /* MyPlantsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPlantsView.swift; sourceTree = "<group>"; };
 		04E186CF2BF72EE900779890 /* PlantCardBasah.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantCardBasah.swift; sourceTree = "<group>"; };
+		241DE1DA2BFFA6EF0039DF11 /* DetailViewMac.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewMac.swift; sourceTree = "<group>"; };
 		24A646CE2BF79E80004C0906 /* DetailPlantView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPlantView.swift; sourceTree = "<group>"; };
 		A29CBA5A2BF5EE5D00DE2F8F /* Plant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plant.swift; sourceTree = "<group>"; };
 		A2B431842BF5F3210075FE10 /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
@@ -193,6 +195,7 @@
 				A2F598592BFDFF9900104959 /* PlantCardMacOS.swift */,
 				0465AB002BEF7FFC001331D1 /* MacOS_GreenThumb.entitlements */,
 				0465AAFD2BEF7FFC001331D1 /* Preview Content */,
+				241DE1DA2BFFA6EF0039DF11 /* DetailViewMac.swift */,
 			);
 			path = MacOS_GreenThumb;
 			sourceTree = "<group>";
@@ -435,6 +438,7 @@
 				A2F598672BFE1A8300104959 /* HomeViewMac.swift in Sources */,
 				A2F8A2712BFEEB3D00B7C307 /* PlantCard.swift in Sources */,
 				A2F5985A2BFDFF9900104959 /* PlantCardMacOS.swift in Sources */,
+				241DE1DB2BFFA6EF0039DF11 /* DetailViewMac.swift in Sources */,
 				A2F598632BFE00E400104959 /* CircleImage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
