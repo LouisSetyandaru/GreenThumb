@@ -21,6 +21,9 @@
 		04E186D02BF72EE900779890 /* PlantCardBasah.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E186CF2BF72EE900779890 /* PlantCardBasah.swift */; };
 		241DE1DB2BFFA6EF0039DF11 /* DetailViewMac.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241DE1DA2BFFA6EF0039DF11 /* DetailViewMac.swift */; };
 		24A646CF2BF79E80004C0906 /* DetailPlantView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24A646CE2BF79E80004C0906 /* DetailPlantView.swift */; };
+		24FF91982C03147300D6AC71 /* AddedPlantView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FF91972C03147300D6AC71 /* AddedPlantView.swift */; };
+		24FF919A2C031EE500D6AC71 /* PlantThisButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FF91992C031EE500D6AC71 /* PlantThisButton.swift */; };
+		24FF919B2C0330D100D6AC71 /* PlantThisButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FF91992C031EE500D6AC71 /* PlantThisButton.swift */; };
 		A20A62F92BFE1E5E00963A72 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0465AACB2BEE0C83001331D1 /* Assets.xcassets */; };
 		A20A62FA2BFE26E300963A72 /* GreenThumbApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0465AAC72BEE0C81001331D1 /* GreenThumbApp.swift */; };
 		A20A62FB2BFE26E300963A72 /* GreenThumbApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0465AAC72BEE0C81001331D1 /* GreenThumbApp.swift */; };
@@ -85,6 +88,8 @@
 		04E186CF2BF72EE900779890 /* PlantCardBasah.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantCardBasah.swift; sourceTree = "<group>"; };
 		241DE1DA2BFFA6EF0039DF11 /* DetailViewMac.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewMac.swift; sourceTree = "<group>"; };
 		24A646CE2BF79E80004C0906 /* DetailPlantView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPlantView.swift; sourceTree = "<group>"; };
+		24FF91972C03147300D6AC71 /* AddedPlantView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddedPlantView.swift; sourceTree = "<group>"; };
+		24FF91992C031EE500D6AC71 /* PlantThisButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantThisButton.swift; sourceTree = "<group>"; };
 		A29CBA5A2BF5EE5D00DE2F8F /* Plant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plant.swift; sourceTree = "<group>"; };
 		A2B431842BF5F3210075FE10 /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
 		A2B431892BF5F3860075FE10 /* PlantCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantCard.swift; sourceTree = "<group>"; };
@@ -154,6 +159,7 @@
 				04E186CD2BF72D1100779890 /* MyPlantsView.swift */,
 				0465AAC92BEE0C81001331D1 /* ContentView.swift */,
 				24A646CE2BF79E80004C0906 /* DetailPlantView.swift */,
+				24FF91972C03147300D6AC71 /* AddedPlantView.swift */,
 				0465AACB2BEE0C83001331D1 /* Assets.xcassets */,
 				0465AACD2BEE0C83001331D1 /* Preview Content */,
 			);
@@ -238,6 +244,7 @@
 			isa = PBXGroup;
 			children = (
 				A2B4318B2BF607760075FE10 /* CircleImage.swift */,
+				24FF91992C031EE500D6AC71 /* PlantThisButton.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -405,6 +412,8 @@
 				0465AACA2BEE0C81001331D1 /* ContentView.swift in Sources */,
 				A29CBA5B2BF5EE5D00DE2F8F /* Plant.swift in Sources */,
 				A2B431852BF5F3210075FE10 /* ModelData.swift in Sources */,
+				24FF919A2C031EE500D6AC71 /* PlantThisButton.swift in Sources */,
+				24FF91982C03147300D6AC71 /* AddedPlantView.swift in Sources */,
 				A2B4318C2BF607760075FE10 /* CircleImage.swift in Sources */,
 				24A646CF2BF79E80004C0906 /* DetailPlantView.swift in Sources */,
 				04E186CE2BF72D1100779890 /* MyPlantsView.swift in Sources */,
@@ -436,6 +445,7 @@
 				A20A62FB2BFE26E300963A72 /* GreenThumbApp.swift in Sources */,
 				A2F598622BFE00E400104959 /* Plant.swift in Sources */,
 				A2F598672BFE1A8300104959 /* HomeViewMac.swift in Sources */,
+				24FF919B2C0330D100D6AC71 /* PlantThisButton.swift in Sources */,
 				A2F8A2712BFEEB3D00B7C307 /* PlantCard.swift in Sources */,
 				A2F5985A2BFDFF9900104959 /* PlantCardMacOS.swift in Sources */,
 				241DE1DB2BFFA6EF0039DF11 /* DetailViewMac.swift in Sources */,

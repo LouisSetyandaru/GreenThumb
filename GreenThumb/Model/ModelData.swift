@@ -15,7 +15,6 @@ class ModelData {
     var features: [Plant] {
             plants.filter { $0.isFeatured }
         }
-    
 
 }
 

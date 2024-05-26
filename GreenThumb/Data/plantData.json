@@ -48,7 +48,7 @@
         "plantingSteps": "1. Siapkan pot dengan media tanam khusus anggrek. 2. Tanam bibit anggrek. 3. Letakkan di tempat yang teduh. 4. Siram dengan air yang mengalir.",
         "isWatered": false,
         "image": "anggrek",
-        "isOnList": true
+        "isOnList": false
     },
     {
         "id": 4,
@@ -116,7 +116,7 @@
         "plantingSteps": "1. Pilih lokasi yang luas. 2. Tanam bibit bambu di tanah yang subur. 3. Siram secara teratur. 4. Beri pupuk organik setiap bulan.",
         "isWatered": true,
         "image": "bambu",
-        "isOnList": true
+        "isOnList": false
     },
     {
         "id": 8,
@@ -150,6 +150,6 @@
         "plantingSteps": "1. Siapkan pot dengan tanah yang subur dan drainase baik. 2. Tanam biji bunga matahari. 3. Letakkan di tempat yang terkena sinar matahari langsung. 4. Siram secara teratur.",
         "isWatered": false,
         "image": "bungamatahari",
-        "isOnList": true
+        "isOnList": false
     }
 ]
