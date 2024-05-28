@@ -25,26 +25,23 @@ struct HomeViewWatch: View {
     }
     
     var body: some View {
-        NavigationView {
-            ScrollView {
-                HStack() {
+        NavigationView() {
+     
+              
                   
                     
                     ScrollView(.horizontal, showsIndicators: false) {
                         HStack {
                             ForEach(modelData.plants.filter { $0.isFeatured }) { plant in
-                                NavigationLink(destination: DetailPlantView(plant: plant)) {
+                                NavigationLink(destination: DetailPlantViewWatch(plant: plant)) {
                                     PlantCardWatch(plant: plant)
                                 }
                             }
                         }
-                        .padding()
+                        .padding(30)
                     }
                     
-                    Text("All Plants")
-                        .font(.title2)
-                        .fontWeight(.bold)
-                        .padding(.horizontal)
+                   
                     
 //                    ForEach(filteredPlants) { plant in
 //                        NavigationLink(destination: DetailPlantView(plant: plant)) {
@@ -55,10 +52,10 @@ struct HomeViewWatch: View {
 //                    .padding(.bottom, 9)
 //                    
 //                    Spacer()
-                }
-            }
-            .navigationTitle("Home")
-        }
+                
+            
+           
+        }.background(Color(red: 0.38627450980392155, green: 0.7215686274509804, blue: 0.5254901960784314))
     }
 }
 
