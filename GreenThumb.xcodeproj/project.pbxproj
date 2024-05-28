@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		045DB6912C05A4800054F705 /* HomeViewWatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045DB6902C05A4800054F705 /* HomeViewWatch.swift */; };
+		045DB6932C05A83F0054F705 /* PlantCardWatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045DB6922C05A83F0054F705 /* PlantCardWatch.swift */; };
 		0465AAC82BEE0C81001331D1 /* GreenThumbApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0465AAC72BEE0C81001331D1 /* GreenThumbApp.swift */; };
 		0465AACA2BEE0C81001331D1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0465AAC92BEE0C81001331D1 /* ContentView.swift */; };
 		0465AACC2BEE0C83001331D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0465AACB2BEE0C83001331D1 /* Assets.xcassets */; };
@@ -68,6 +70,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		045DB6902C05A4800054F705 /* HomeViewWatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewWatch.swift; sourceTree = "<group>"; };
+		045DB6922C05A83F0054F705 /* PlantCardWatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantCardWatch.swift; sourceTree = "<group>"; };
 		0465AAC42BEE0C81001331D1 /* GreenThumb.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GreenThumb.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0465AAC72BEE0C81001331D1 /* GreenThumbApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenThumbApp.swift; sourceTree = "<group>"; };
 		0465AAC92BEE0C81001331D1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -174,6 +178,8 @@
 				0465AAE32BEF7BF7001331D1 /* ContentView.swift */,
 				0465AAE52BEF7BFB001331D1 /* Assets.xcassets */,
 				0465AAE72BEF7BFB001331D1 /* Preview Content */,
+				045DB6902C05A4800054F705 /* HomeViewWatch.swift */,
+				045DB6922C05A83F0054F705 /* PlantCardWatch.swift */,
 			);
 			path = "WatchOS_GreenThumb Watch App";
 			sourceTree = "<group>";
@@ -420,10 +426,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				A23147D92C04DC51007F3D0C /* Plant.swift in Sources */,
+				045DB6932C05A83F0054F705 /* PlantCardWatch.swift in Sources */,
 				A23147DA2C04DC51007F3D0C /* ModelData.swift in Sources */,
 				0465AAE42BEF7BF7001331D1 /* ContentView.swift in Sources */,
 				A23147DB2C04DC96007F3D0C /* GreenThumbApp.swift in Sources */,
 				A23147D72C04DC51007F3D0C /* CircleImage.swift in Sources */,
+				045DB6912C05A4800054F705 /* HomeViewWatch.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
