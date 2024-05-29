@@ -25,18 +25,20 @@ struct Plant: Hashable, Codable, Identifiable {
     var isWatered: Bool
     var image: String
     var isOnList: Bool
+    let latitude: Double
+    let longitude: Double
     
-//    private var imageName: String
-//    var image: Image {
-//        Image(imageName)
-//    }
-//    
-//    var featureImage: Image? {
-//        isFeatured ? Image(imageName + "_feature") : nil
-//    }
-//
-//    struct Coordinates: Hashable, Codable {
-//        var latitude: Double
-//        var longitude: Double
-//    }
+    //    private var imageName: String
+    //    var image: Image {
+    //        Image(imageName)
+    //    }
+    //
+    //    var featureImage: Image? {
+    //        isFeatured ? Image(imageName + "_feature") : nil
+    //    }
+    //
+    //    struct Coordinates: Hashable, Codable {
+    //        var latitude: Double
+    //        var longitude: Double
+    //    }
 }
