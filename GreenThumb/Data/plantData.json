@@ -15,8 +15,11 @@
         "isWatered": true,
         "image": "mawar",
         "isOnList": false,
-        "latitude": -7.293048,// Kordinat Ciputra World Mall
-        "longitude": 112.719835
+        "coordinates": {
+            "longitude": 112.719835,
+            "latitude": -7.293048
+        }
+        
     },
     {
         "id": 2,
@@ -34,8 +37,11 @@
         "isWatered": true,
         "image": "lidah_buaya",
         "isOnList": false,
-        "latitude": -7.289060, // Kordinat PTC Surabaya
-        "longitude": 112.675608
+        "coordinates": {
+            "longitude": 112.675608,
+            "latitude": -7.289060
+        }
+        
     },
     {
         "id": 3,
@@ -53,8 +59,11 @@
         "isWatered": false,
         "image": "anggrek",
         "isOnList": true,
-        "latitude": -7.262399, //kordinat Tunjungan Plaza Surabaya
-        "longitude": 112.738576
+        "coordinates": {
+            "longitude": 112.738576,
+            "latitude": -7.262399
+        }
+        
     },
     {
         "id": 4,
@@ -72,8 +81,11 @@
         "isWatered": true,
         "image": "tomat",
         "isOnList": false,
-        "latitude": -7.309135, // Kordinat Royal Plaza
-        "longitude": 112.734284
+        "coordinates": {
+            "longitude": 112.734284,
+            "latitude": -7.309135
+        }
+        
     },
     {
         "id": 5,
@@ -91,8 +103,11 @@
         "isWatered": false,
         "image": "kaktus",
         "isOnList": false,
-        "latitude": -7.264679, // Kordinat Plaza Surabaya
-        "longitude": 112.748604
+        "coordinates": {
+            "longitude": 112.748604,
+            "latitude": -7.264679
+        }
+        
     },
     {
         "id": 6,
@@ -110,8 +125,11 @@
         "isWatered": false,
         "image": "mint",
         "isOnList": false,
-        "latitude": -7.345515, // Kordinat City of Tomorrow
-        "longitude": 112.727544
+        "coordinates": {
+            "longitude": 112.727544,
+            "latitude": -7.345515
+        }
+        
     },
     {
         "id": 7,
@@ -129,8 +147,11 @@
         "isWatered": true,
         "image": "bambu",
         "isOnList": true,
-        "latitude": -7.338584,// Kordinat Trans Icon Surabaya
-        "longitude": 112.728379
+        "coordinates": {
+            "longitude": 112.728379,
+            "latitude": -7.338584
+        }
+        
     },
     {
         "id": 8,
@@ -148,8 +169,11 @@
         "isWatered": true,
         "image": "lavender",
         "isOnList": false,
-        "latitude": -7.261874, // Kordinat Grand City Surabaya
-        "longitude": 112.750409
+        "coordinates": {
+            "longitude": 112.750409,
+            "latitude": -7.261874
+        }
+        
     },
     {
         "id": 9,
@@ -167,7 +191,10 @@
         "isWatered": false,
         "image": "bungamatahari",
         "isOnList": true,
-        "latitude": -7.285924,  // Kordinat Landmark mall
-        "longitude": 112.680920
+        "coordinates": {
+            "longitude": 112.680920,
+            "latitude": -7.285924
+        }
+        
     }
 ]

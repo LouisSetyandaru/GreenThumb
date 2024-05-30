@@ -6,8 +6,13 @@
 //
 
 import Foundation
-
+import CoreLocation
 import SwiftUI
+
+struct Coordinates: Hashable, Codable {
+    var latitude: Double
+    var longitude: Double
+}
 
 struct Plant: Hashable, Codable, Identifiable {
     var id: Int
@@ -25,8 +30,14 @@ struct Plant: Hashable, Codable, Identifiable {
     var isWatered: Bool
     var image: String
     var isOnList: Bool
-    let latitude: Double
-    let longitude: Double
+    var coordinates: Coordinates
+    var locationCoordinate: CLLocationCoordinate2D {
+        CLLocationCoordinate2D(
+            latitude: coordinates.latitude,
+            longitude: coordinates.longitude)
+    }
+    
+    
     
     //    private var imageName: String
     //    var image: Image {
