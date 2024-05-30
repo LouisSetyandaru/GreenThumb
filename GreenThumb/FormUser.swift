@@ -9,7 +9,7 @@ import SwiftUI
 
 struct FormUser: View {
     var body: some View {
-        Text("yhygygy")
+        Text("yhyygy")
     }
 }
 
