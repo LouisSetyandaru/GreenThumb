@@ -19,16 +19,30 @@ struct DetailPlantViewWatch: View {
             
             ScrollView(.vertical, showsIndicators: false) {
                 VStack {
-                    Circle()
-                                   .foregroundColor(.white)
-                                   .frame(width: 90, height: 90)
-                                   .padding(5)
-                    Text(plant.name)
+                    ZStack{
+                        Circle()
+                                       .foregroundColor(.white)
+                                       .frame(width: 90, height: 90)
+                                       .padding(5)
+                        CircleImage(image: Image(plant.image))
+                            .frame(width: 90.0, height: 90.0)
+                            .aspectRatio(contentMode: .fit)
+                            .cornerRadius(100)
+                            
+                    }
+                    Text("Time to water \n\(plant.name)")
+
                         .font(.headline)
                         .foregroundColor(.primary)
                         .frame(width: 120.0, height: 50.0)
                         
-                  
+                    Button(action: {}) { // Empty action closure
+                                Text("Done")
+                                    .foregroundColor(.white)
+                                    .padding(5)
+                                    .background(Color.blue)
+                                    .cornerRadius(8)
+                            }
                 }
                 
                 

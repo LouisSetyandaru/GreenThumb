@@ -17,12 +17,9 @@ struct HomeViewWatch: View {
     }
     
     var filteredPlants: [Plant] {
-        let filtered = modelData.plants.filter { plant in
-            (selectedFilter == .all || (selectedFilter == .outdoors && plant.isOutdoor) || (selectedFilter == .indoors && !plant.isOutdoor)) &&
-            (searchText.isEmpty || plant.name.lowercased().contains(searchText.lowercased()))
-        }
-        return filtered
+        modelData.plants.filter { $0.isOnList && $0.isWatered }
     }
+
     
     var body: some View {
         NavigationView() {
