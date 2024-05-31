@@ -146,8 +146,8 @@ struct DetailPlantView: View {
                                 
                                 
                                 Spacer()
-                                
-                                    PlantThisButton(isSet: $modelData.plants[plantIndex].isOnList)
+//                                
+//                                    PlantThisButton(isSet: $modelData.plants[plantIndex].isOnList)
 
                                 
                                 Spacer().frame(height: 30)
