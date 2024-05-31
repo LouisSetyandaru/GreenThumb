@@ -148,11 +148,11 @@ struct DetailPlantView: View {
                                 
                                 
                                 Spacer()
-                                
+
                                 NavigationLink(destination: AddedPlantView(), isActive: $navigateToAddedPlant) {
                                                                     PlantThisButton(isSet: $modelData.plants[plantIndex].isOnList, navigateToAddedPlant: $navigateToAddedPlant)
                                                                 }
-                                                                
+                                                              
 
                                 
                                 Spacer().frame(height: 30)

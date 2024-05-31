@@ -11,10 +11,10 @@ struct CircleImage: View {
     var image: Image
 
     var body: some View {
-        image
-            .resizable() // Menambahkan resizable untuk memastikan gambar bisa diubah ukurannya
-            .scaledToFill()
-    }
+            image
+                .resizable() // Menambahkan resizable untuk memastikan gambar bisa diubah ukurannya
+                .scaledToFill()
+        }
 }
 
 #Preview {
