@@ -15,7 +15,7 @@ struct PlantThisButton: View {
         Button {
             isSet.toggle()
         } label: {
-            Text("Plant This")
+            Text("Plant This Shit")
                 .padding()
                 .padding(.horizontal, 120.0)
                 .background(Color(red: 73/255, green: 133/255, blue: 83/255))
