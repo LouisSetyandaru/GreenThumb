@@ -36,6 +36,9 @@ struct Plant: Hashable, Codable, Identifiable {
             latitude: coordinates.latitude,
             longitude: coordinates.longitude)
     }
+    var store_image: String
+    var store_name: String
+    var store_address: String
     
     
     
