@@ -8,27 +8,40 @@
 import SwiftUI
 
 struct DetailPlantViewWatch: View {
-    var plant: Plant
     
+    @Environment(ModelData.self) var modelData
+    
+    var plant: Plant
+    var plantIndex: Int {
+            modelData.plants.firstIndex(where: { $0.id == plant.id })!
+        }
     
     var body: some View {
+        
+        @Bindable var modelData = modelData
+        
         NavigationView() {
-            
-            
-            
             
             ScrollView(.vertical, showsIndicators: false) {
                 VStack {
-                    Circle()
-                                   .foregroundColor(.white)
-                                   .frame(width: 90, height: 90)
-                                   .padding(5)
-                    Text(plant.name)
+                    ZStack{
+                        Circle()
+                                       .foregroundColor(.white)
+                                       .frame(width: 90, height: 90)
+                                       .padding(5)
+                        CircleImage(image: Image(plant.image))
+                            .frame(width: 90.0, height: 90.0)
+                            .aspectRatio(contentMode: .fit)
+                            .cornerRadius(100)
+                            
+                    }
+                    Text("Time to water \n\(plant.name)")
+
                         .font(.headline)
                         .foregroundColor(.primary)
                         .frame(width: 120.0, height: 50.0)
                         
-                  
+                    PlantThisButtonWatch(isSet: $modelData.plants[plantIndex].isWatered)
                 }
                 
                 
@@ -44,7 +57,6 @@ struct DetailPlantViewWatch: View {
     #Preview {
         let plants = ModelData().plants
         
-        return Group {
-            DetailPlantViewWatch(plant: plants[6])
-        }
+        return DetailPlantViewWatch(plant: plants[6])
+            .environment(ModelData())
     }

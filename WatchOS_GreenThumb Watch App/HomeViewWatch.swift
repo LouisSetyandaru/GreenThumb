@@ -17,12 +17,9 @@ struct HomeViewWatch: View {
     }
     
     var filteredPlants: [Plant] {
-        let filtered = modelData.plants.filter { plant in
-            (selectedFilter == .all || (selectedFilter == .outdoors && plant.isOutdoor) || (selectedFilter == .indoors && !plant.isOutdoor)) &&
-            (searchText.isEmpty || plant.name.lowercased().contains(searchText.lowercased()))
-        }
-        return filtered
+        modelData.plants.filter { $0.isWatered }
     }
+
     
     var body: some View {
         NavigationView() {
@@ -32,7 +29,7 @@ struct HomeViewWatch: View {
                     
                     ScrollView(.horizontal, showsIndicators: false) {
                         HStack {
-                            ForEach(modelData.plants.filter { $0.isFeatured }) { plant in
+                            ForEach(modelData.plants.filter { $0.isWatered }) { plant in
                                 NavigationLink(destination: DetailPlantViewWatch(plant: plant)) {
                                     PlantCardWatch(plant: plant)
                                 }
@@ -50,7 +47,7 @@ struct HomeViewWatch: View {
 //                    }
 //                    .padding(.leading, 20.0)
 //                    .padding(.bottom, 9)
-//                    
+//
 //                    Spacer()
                 
             

@@ -20,6 +20,7 @@
 		04E186CE2BF72D1100779890 /* MyPlantsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E186CD2BF72D1100779890 /* MyPlantsView.swift */; };
 		04E186D02BF72EE900779890 /* PlantCardBasah.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E186CF2BF72EE900779890 /* PlantCardBasah.swift */; };
 		04ED0DB42C05D5E8000902FF /* DetailPlantViewWatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04ED0DB32C05D5E8000902FF /* DetailPlantViewWatch.swift */; };
+		04ED0DB62C096468000902FF /* PlantThisButtonWatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04ED0DB52C096468000902FF /* PlantThisButtonWatch.swift */; };
 		241DE1DB2BFFA6EF0039DF11 /* DetailViewMac.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241DE1DA2BFFA6EF0039DF11 /* DetailViewMac.swift */; };
 		24A646CF2BF79E80004C0906 /* DetailPlantView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24A646CE2BF79E80004C0906 /* DetailPlantView.swift */; };
 		A20A62F92BFE1E5E00963A72 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0465AACB2BEE0C83001331D1 /* Assets.xcassets */; };
@@ -89,6 +90,7 @@
 		04E186CD2BF72D1100779890 /* MyPlantsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPlantsView.swift; sourceTree = "<group>"; };
 		04E186CF2BF72EE900779890 /* PlantCardBasah.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantCardBasah.swift; sourceTree = "<group>"; };
 		04ED0DB32C05D5E8000902FF /* DetailPlantViewWatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPlantViewWatch.swift; sourceTree = "<group>"; };
+		04ED0DB52C096468000902FF /* PlantThisButtonWatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantThisButtonWatch.swift; sourceTree = "<group>"; };
 		241DE1DA2BFFA6EF0039DF11 /* DetailViewMac.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewMac.swift; sourceTree = "<group>"; };
 		24A646CE2BF79E80004C0906 /* DetailPlantView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPlantView.swift; sourceTree = "<group>"; };
 		A29CBA5A2BF5EE5D00DE2F8F /* Plant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plant.swift; sourceTree = "<group>"; };
@@ -183,6 +185,7 @@
 				045DB6902C05A4800054F705 /* HomeViewWatch.swift */,
 				04ED0DB32C05D5E8000902FF /* DetailPlantViewWatch.swift */,
 				045DB6922C05A83F0054F705 /* PlantCardWatch.swift */,
+				04ED0DB52C096468000902FF /* PlantThisButtonWatch.swift */,
 			);
 			path = "WatchOS_GreenThumb Watch App";
 			sourceTree = "<group>";
@@ -432,6 +435,7 @@
 				04ED0DB42C05D5E8000902FF /* DetailPlantViewWatch.swift in Sources */,
 				045DB6932C05A83F0054F705 /* PlantCardWatch.swift in Sources */,
 				A23147DA2C04DC51007F3D0C /* ModelData.swift in Sources */,
+				04ED0DB62C096468000902FF /* PlantThisButtonWatch.swift in Sources */,
 				0465AAE42BEF7BF7001331D1 /* ContentView.swift in Sources */,
 				A23147DB2C04DC96007F3D0C /* GreenThumbApp.swift in Sources */,
 				A23147D72C04DC51007F3D0C /* CircleImage.swift in Sources */,

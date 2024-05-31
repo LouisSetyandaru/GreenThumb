@@ -12,7 +12,7 @@
         "plantingAge": 2,
         "wateringTime": "07:00",
         "plantingSteps": "1. Pilih lokasi yang cerah. 2. Gali lubang sedalam 30 cm. 3. Tanam bibit mawar. 4. Siram secara teratur.",
-        "isWatered": true,
+        "isWatered": false,
         "image": "mawar",
         "isOnList": false
     },

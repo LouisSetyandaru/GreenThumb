@@ -5,10 +5,17 @@ struct PlantCardWatch: View {
     
     var body: some View {
         VStack() {
-            Circle()
-                           .foregroundColor(.white)
-                           .frame(width: 70, height: 70)
-                           .padding(5)
+            ZStack{
+                Circle()
+                               .foregroundColor(.white)
+                               .frame(width: 70, height: 70)
+                               .padding(5)
+                CircleImage(image: Image(plant.image))
+                    .frame(width: 90.0, height: 90.0)
+                    .aspectRatio(contentMode: .fit)
+                    .cornerRadius(100)
+                
+            }
             Text(plant.name)
                 .font(.headline)
                 .foregroundColor(.primary)
