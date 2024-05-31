@@ -13,6 +13,8 @@ struct DetailPlantView: View {
     
     var plant: Plant
     
+    @State private var navigateToAddedPlant = false
+    
     var plantIndex: Int {
         modelData.plants.firstIndex(where: { $0.id == plant.id })!
     }
@@ -147,7 +149,10 @@ struct DetailPlantView: View {
                                 
                                 Spacer()
                                 
-                                    PlantThisButton(isSet: $modelData.plants[plantIndex].isOnList)
+                                NavigationLink(destination: AddedPlantView(), isActive: $navigateToAddedPlant) {
+                                                                    PlantThisButton(isSet: $modelData.plants[plantIndex].isOnList, navigateToAddedPlant: $navigateToAddedPlant)
+                                                                }
+                                                                
 
                                 
                                 Spacer().frame(height: 30)

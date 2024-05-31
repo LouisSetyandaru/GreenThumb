@@ -23,6 +23,8 @@
 		04E186D02BF72EE900779890 /* PlantCardBasah.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E186CF2BF72EE900779890 /* PlantCardBasah.swift */; };
 		241DE1DB2BFFA6EF0039DF11 /* DetailViewMac.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241DE1DA2BFFA6EF0039DF11 /* DetailViewMac.swift */; };
 		24A646CF2BF79E80004C0906 /* DetailPlantView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24A646CE2BF79E80004C0906 /* DetailPlantView.swift */; };
+		24E1FD3D2C096BAB003D6D6B /* PlantThisButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E1FD3C2C096BAB003D6D6B /* PlantThisButton.swift */; };
+		24E1FD3F2C096BDF003D6D6B /* AddedPlantView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E1FD3E2C096BDF003D6D6B /* AddedPlantView.swift */; };
 		A20A62F92BFE1E5E00963A72 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0465AACB2BEE0C83001331D1 /* Assets.xcassets */; };
 		A20A62FA2BFE26E300963A72 /* GreenThumbApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0465AAC72BEE0C81001331D1 /* GreenThumbApp.swift */; };
 		A20A62FB2BFE26E300963A72 /* GreenThumbApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0465AAC72BEE0C81001331D1 /* GreenThumbApp.swift */; };
@@ -89,6 +91,8 @@
 		04E186CF2BF72EE900779890 /* PlantCardBasah.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantCardBasah.swift; sourceTree = "<group>"; };
 		241DE1DA2BFFA6EF0039DF11 /* DetailViewMac.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewMac.swift; sourceTree = "<group>"; };
 		24A646CE2BF79E80004C0906 /* DetailPlantView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPlantView.swift; sourceTree = "<group>"; };
+		24E1FD3C2C096BAB003D6D6B /* PlantThisButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantThisButton.swift; sourceTree = "<group>"; };
+		24E1FD3E2C096BDF003D6D6B /* AddedPlantView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddedPlantView.swift; sourceTree = "<group>"; };
 		A29CBA5A2BF5EE5D00DE2F8F /* Plant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plant.swift; sourceTree = "<group>"; };
 		A2B431842BF5F3210075FE10 /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
 		A2B431892BF5F3860075FE10 /* PlantCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantCard.swift; sourceTree = "<group>"; };
@@ -159,6 +163,7 @@
 				0465AAC92BEE0C81001331D1 /* ContentView.swift */,
 				24A646CE2BF79E80004C0906 /* DetailPlantView.swift */,
 				041245062C06EDCA004344C1 /* DetailOwnPlantView.swift */,
+				24E1FD3E2C096BDF003D6D6B /* AddedPlantView.swift */,
 				0465AACB2BEE0C83001331D1 /* Assets.xcassets */,
 				0465AACD2BEE0C83001331D1 /* Preview Content */,
 			);
@@ -244,6 +249,7 @@
 			children = (
 				A2B4318B2BF607760075FE10 /* CircleImage.swift */,
 				045046492C074BC900A92567 /* MapView.swift */,
+				24E1FD3C2C096BAB003D6D6B /* PlantThisButton.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -411,11 +417,13 @@
 				0465AACA2BEE0C81001331D1 /* ContentView.swift in Sources */,
 				A29CBA5B2BF5EE5D00DE2F8F /* Plant.swift in Sources */,
 				A2B431852BF5F3210075FE10 /* ModelData.swift in Sources */,
+				24E1FD3D2C096BAB003D6D6B /* PlantThisButton.swift in Sources */,
 				A2B4318C2BF607760075FE10 /* CircleImage.swift in Sources */,
 				0450464A2C074BC900A92567 /* MapView.swift in Sources */,
 				24A646CF2BF79E80004C0906 /* DetailPlantView.swift in Sources */,
 				04E186CE2BF72D1100779890 /* MyPlantsView.swift in Sources */,
 				A2B4318E2BF610AD0075FE10 /* HomeView.swift in Sources */,
+				24E1FD3F2C096BDF003D6D6B /* AddedPlantView.swift in Sources */,
 				A2B431932BF659E40075FE10 /* PlantCardV2.swift in Sources */,
 				041245072C06EDCA004344C1 /* DetailOwnPlantView.swift in Sources */,
 				04E186D02BF72EE900779890 /* PlantCardBasah.swift in Sources */,
