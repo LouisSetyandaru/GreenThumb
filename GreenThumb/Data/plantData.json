@@ -14,7 +14,12 @@
         "plantingSteps": "1. Pilih lokasi yang cerah. 2. Gali lubang sedalam 30 cm. 3. Tanam bibit mawar. 4. Siram secara teratur.",
         "isWatered": true,
         "image": "mawar",
-        "isOnList": false
+        "isOnList": false,
+        "coordinates": {
+            "longitude": 112.719835,
+            "latitude": -7.293048
+        }
+        
     },
     {
         "id": 2,
@@ -31,7 +36,12 @@
         "plantingSteps": "1. Siapkan pot dengan tanah berpasir. 2. Tanam anakan lidah buaya. 3. Letakkan di tempat yang terkena sinar matahari tidak langsung. 4. Siram secukupnya.",
         "isWatered": true,
         "image": "lidah_buaya",
-        "isOnList": false
+        "isOnList": false,
+        "coordinates": {
+            "longitude": 112.675608,
+            "latitude": -7.289060
+        }
+        
     },
     {
         "id": 3,
@@ -48,7 +58,12 @@
         "plantingSteps": "1. Siapkan pot dengan media tanam khusus anggrek. 2. Tanam bibit anggrek. 3. Letakkan di tempat yang teduh. 4. Siram dengan air yang mengalir.",
         "isWatered": false,
         "image": "anggrek",
-        "isOnList": true
+        "isOnList": true,
+        "coordinates": {
+            "longitude": 112.738576,
+            "latitude": -7.262399
+        }
+        
     },
     {
         "id": 4,
@@ -65,7 +80,12 @@
         "plantingSteps": "1. Siapkan bibit tomat. 2. Tanam di tanah yang subur. 3. Siram secara teratur. 4. Beri pupuk setiap dua minggu.",
         "isWatered": true,
         "image": "tomat",
-        "isOnList": false
+        "isOnList": false,
+        "coordinates": {
+            "longitude": 112.734284,
+            "latitude": -7.309135
+        }
+        
     },
     {
         "id": 5,
@@ -82,7 +102,12 @@
         "plantingSteps": "1. Pilih pot dengan drainase baik. 2. Tanam kaktus di tanah yang berpasir. 3. Letakkan di tempat yang terkena sinar matahari langsung. 4. Siram sangat jarang.",
         "isWatered": false,
         "image": "kaktus",
-        "isOnList": false
+        "isOnList": false,
+        "coordinates": {
+            "longitude": 112.748604,
+            "latitude": -7.264679
+        }
+        
     },
     {
         "id": 6,
@@ -99,7 +124,12 @@
         "plantingSteps": "1. Siapkan pot dengan tanah yang subur. 2. Tanam bibit mint. 3. Letakkan di tempat yang teduh. 4. Siram secara teratur.",
         "isWatered": false,
         "image": "mint",
-        "isOnList": false
+        "isOnList": false,
+        "coordinates": {
+            "longitude": 112.727544,
+            "latitude": -7.345515
+        }
+        
     },
     {
         "id": 7,
@@ -116,7 +146,12 @@
         "plantingSteps": "1. Pilih lokasi yang luas. 2. Tanam bibit bambu di tanah yang subur. 3. Siram secara teratur. 4. Beri pupuk organik setiap bulan.",
         "isWatered": true,
         "image": "bambu",
-        "isOnList": true
+        "isOnList": true,
+        "coordinates": {
+            "longitude": 112.728379,
+            "latitude": -7.338584
+        }
+        
     },
     {
         "id": 8,
@@ -133,7 +168,12 @@
         "plantingSteps": "1. Siapkan tanah yang berpasir. 2. Tanam bibit lavender. 3. Letakkan di tempat yang terkena sinar matahari penuh. 4. Siram secukupnya.",
         "isWatered": true,
         "image": "lavender",
-        "isOnList": false
+        "isOnList": false,
+        "coordinates": {
+            "longitude": 112.750409,
+            "latitude": -7.261874
+        }
+        
     },
     {
         "id": 9,
@@ -150,6 +190,11 @@
         "plantingSteps": "1. Siapkan pot dengan tanah yang subur dan drainase baik. 2. Tanam biji bunga matahari. 3. Letakkan di tempat yang terkena sinar matahari langsung. 4. Siram secara teratur.",
         "isWatered": false,
         "image": "bungamatahari",
-        "isOnList": true
+        "isOnList": true,
+        "coordinates": {
+            "longitude": 112.680920,
+            "latitude": -7.285924
+        }
+        
     }
 ]
