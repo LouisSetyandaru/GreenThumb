@@ -12,10 +12,8 @@ struct DetailViewMac: View {
     var plant: Plant
     
     var body: some View {
-        VStack {
-            
+        NavigationStack {
             ScrollView {
-                
                 HStack(alignment: .center) {
                     
                     ZStack {
@@ -160,16 +158,16 @@ struct DetailViewMac: View {
                 Spacer().frame(height: 40)
                 
                 HStack {
-                  
+                    
                     Spacer().frame(width: 700)
-                    Text("Plant This")
-                        .padding()
-                        .padding(.horizontal, 50.0)
-                        .background(Color(red: 73/255, green: 133/255, blue: 83/255))
-                        .foregroundColor(Color.white)
-                        .cornerRadius(20)
-                    
-                    
+                    NavigationLink(destination: HomeViewMac()) {
+                        Text("Plant This")
+                            .padding()
+                            .padding(.horizontal, 50.0)
+                            .background(Color(red: 73/255, green: 133/255, blue: 83/255))
+                            .foregroundColor(Color.white)
+                            .cornerRadius(20)
+                    }
                 }
                 .padding(.leading, 30)
                 
@@ -181,8 +179,8 @@ struct DetailViewMac: View {
             .background(Color(red: 249/255, green: 249/255, blue: 249/255))
             .frame(minWidth: 1080, minHeight: 720)
             .padding()
+            
         }
-        
     }
 }
 
