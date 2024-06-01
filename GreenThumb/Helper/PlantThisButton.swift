@@ -10,13 +10,13 @@ import SwiftUI
 struct PlantThisButton: View {
     
     @Binding var isSet: Bool
-    @Binding var navigateToAddedPlant: Bool
+    @Binding var navigateStepToPlant: Bool
     
     
     var body: some View {
         Button {
             isSet.toggle()
-            navigateToAddedPlant = true
+            navigateStepToPlant = true
         } label: {
             Text("Plant This")
                 .padding()
@@ -29,5 +29,5 @@ struct PlantThisButton: View {
 }
 
 #Preview {
-    PlantThisButton(isSet: .constant(true), navigateToAddedPlant: .constant(false))
+    PlantThisButton(isSet: .constant(true), navigateStepToPlant: .constant(false))
 }
