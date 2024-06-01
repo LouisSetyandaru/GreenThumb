@@ -23,7 +23,7 @@ struct DetailPlantView: View {
         
         @Bindable var modelData = modelData
         
-        NavigationView {
+        NavigationStack {
             ScrollView {
                 ZStack {
                     
@@ -149,7 +149,7 @@ struct DetailPlantView: View {
                                 
                                 Spacer()
                                 
-                                NavigationLink(destination: StepToPlant(plant: plant), isActive: $navigateStepToPlant) {
+                                NavigationLink(destination: AddedPlantView(plant: plant), isActive: $navigateStepToPlant) {
                                                                     PlantThisButton(isSet: $modelData.plants[plantIndex].isOnList, navigateStepToPlant: $navigateStepToPlant)
                                                                 }
                                                               

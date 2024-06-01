@@ -2,12 +2,14 @@
 //  AddedPlantView.swift
 //  GreenThumb
 //
-//  Created by Michael Sin on 31/05/24.
+//  Created by Michael Sin on 01/06/24.
 //
 
 import SwiftUI
 
 struct AddedPlantView: View {
+    
+    var plant: Plant
     
     var body: some View {
         
@@ -22,7 +24,7 @@ struct AddedPlantView: View {
                         .aspectRatio(contentMode: .fit)
                         .frame(width: 350, height: 250)
                     
-                    Text("plant has been added successfully! Remember to care for it—plants bring life to your home! 🌱")
+                    Text("\(plant.name) has been added successfully! Remember to care for it—plants bring life to your home! 🌱")
                         .font(.headline)
                         .foregroundColor(.gray)
                         .padding(.horizontal, 6)
@@ -32,9 +34,9 @@ struct AddedPlantView: View {
                     
                     Spacer()
                     
-                    NavigationLink(destination: HomeView().environment(ModelData())) {
+                    NavigationLink(destination: StepToPlant(plant: plant).environment(ModelData())) {
                       
-                        Text("Back to Home")
+                        Text("Go to Step")
                             .padding(.vertical, 15.0)
                             .padding(.horizontal, 80.0)
                             .background(Color(red: 73/255, green: 133/255, blue: 83/255))
@@ -53,6 +55,8 @@ struct AddedPlantView: View {
 }
 
 #Preview {
-    
-    AddedPlantView()
+    let plants = ModelData().plants
+    return Group {
+        AddedPlantView(plant: plants[7])
+    }
 }
