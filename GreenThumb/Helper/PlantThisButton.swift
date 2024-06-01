@@ -2,7 +2,7 @@
 //  PlantThisButton.swift
 //  GreenThumb
 //
-//  Created by Michael Sin on 30/05/24.
+//  Created by Michael Sin on 31/05/24.
 //
 
 import SwiftUI
@@ -10,12 +10,15 @@ import SwiftUI
 struct PlantThisButton: View {
     
     @Binding var isSet: Bool
+    @Binding var navigateToAddedPlant: Bool
+    
     
     var body: some View {
         Button {
             isSet.toggle()
+            navigateToAddedPlant = true
         } label: {
-            Text("Plant This Shit")
+            Text("Plant This")
                 .padding()
                 .padding(.horizontal, 120.0)
                 .background(Color(red: 73/255, green: 133/255, blue: 83/255))
@@ -26,5 +29,5 @@ struct PlantThisButton: View {
 }
 
 #Preview {
-    PlantThisButton(isSet: .constant(true))
+    PlantThisButton(isSet: .constant(true), navigateToAddedPlant: .constant(false))
 }
