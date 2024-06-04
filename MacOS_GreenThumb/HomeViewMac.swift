@@ -47,10 +47,8 @@ struct HomeViewMac: View {
                     Spacer()
                     
                     // Home button
-                    Button(action: {
-                        // Action for the home button
-                    }) {
-                        Text("Home")
+                    NavigationLink(destination: MyPlantsViewMac()) {
+                        Text("My Planta")
                             .foregroundColor(.white)
                             .frame(width: 80, height: 40)
                             .background(Color(red: 199/255, green: 219/255, blue: 199/255))

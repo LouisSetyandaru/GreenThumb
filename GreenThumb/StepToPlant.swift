@@ -12,6 +12,7 @@ struct StepToPlant: View {
 //    @Environment(ModelData.self) var modelData
     
     var plant: Plant
+    @State private var navigateBack = false
     
 //    var plantIndex: Int {
 //        modelData.plants.firstIndex(where: { $0.id == plant.id })!
@@ -127,6 +128,16 @@ struct StepToPlant: View {
                             .foregroundColor(.gray)
                             .padding(.horizontal, 6)
                             .frame(maxWidth: 350.0, alignment: .leading)
+                    }
+                    
+                    NavigationLink(destination: HomeView().environment(ModelData())) {
+                      
+                        Text("Go to Step")
+                            .padding(.vertical, 15.0)
+                            .padding(.horizontal, 80.0)
+                            .background(Color(red: 73/255, green: 133/255, blue: 83/255))
+                            .foregroundColor(Color.white)
+                            .cornerRadius(20)
                     }
                     .padding()
                     

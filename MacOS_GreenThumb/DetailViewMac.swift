@@ -9,9 +9,22 @@ import SwiftUI
 
 struct DetailViewMac: View {
     
+    @Environment(ModelData.self) var modelData
+    
     var plant: Plant
     
+    @State private var navigateStepToPlant = false
+    
+    var plantIndex: Int {
+        modelData.plants.firstIndex(where: { $0.id == plant.id })!
+    }
+    
+    
     var body: some View {
+        
+        @Bindable var modelData = modelData
+        
+        
         NavigationStack {
             ScrollView {
                 HStack(alignment: .center) {
@@ -160,13 +173,8 @@ struct DetailViewMac: View {
                 HStack {
                     
                     Spacer().frame(width: 700)
-                    NavigationLink(destination: HomeViewMac()) {
-                        Text("Plant This")
-                            .padding()
-                            .padding(.horizontal, 50.0)
-                            .background(Color(red: 73/255, green: 133/255, blue: 83/255))
-                            .foregroundColor(Color.white)
-                            .cornerRadius(20)
+                    NavigationLink(destination: AddedPlantViewMac(plant: plant), isActive: $navigateStepToPlant) {
+                        PlantThisButton(isSet: $modelData.plants[plantIndex].isOnList, navigateStepToPlant: $navigateStepToPlant)
                     }
                 }
                 .padding(.leading, 30)
@@ -201,10 +209,6 @@ func formatPlantingSteps(_ steps: String) -> String {
 
 #Preview {
     let plants = ModelData().plants
-    
-    return Group {
-        DetailViewMac(plant: plants[6])
-        
-    }
-    
+    return  DetailViewMac(plant: plants[6])
+        .environment(ModelData())
 }

@@ -1,42 +1,41 @@
 //
-//  AddedPlantView.swift
-//  GreenThumb
+//  AddedPlantViewMac.swift
+//  MacOS_GreenThumb
 //
-//  Created by Michael Sin on 01/06/24.
+//  Created by Michael Sin on 02/06/24.
 //
 
 import SwiftUI
 
-struct AddedPlantView: View {
+struct AddedPlantViewMac: View {
     
     var plant: Plant
     
     var body: some View {
-        
-        NavigationView {
-            ScrollView {
+            
+            NavigationStack {
                 VStack(alignment: .center) {
                     
-                    Spacer().frame(height: 100)
+                    Spacer().frame(height: 270)
                     
                     Image("addedplant")
                         .resizable()
                         .aspectRatio(contentMode: .fit)
-                        .frame(width: 350, height: 250)
+                        .frame(width: 250, height: 150)
                     
                     Text("\(plant.name) has been added successfully! Remember to care for it—plants bring life to your home! 🌱")
                         .font(.headline)
                         .foregroundColor(.gray)
                         .padding(.horizontal, 6)
-                        .padding(.bottom, 50)
+                        .padding(.bottom, 70)
                         .frame(maxWidth: 350.0, alignment: .center)
                         .multilineTextAlignment(.center)
                     
-                    Spacer()
+         
                     
-                    NavigationLink(destination: StepToPlant(plant: plant).environment(ModelData())) {
+                    NavigationLink(destination: HomeViewMac().environment(ModelData())) {
                       
-                        Text("Go to Step")
+                        Text("Back to Home")
                             .padding(.vertical, 15.0)
                             .padding(.horizontal, 80.0)
                             .background(Color(red: 73/255, green: 133/255, blue: 83/255))
@@ -49,14 +48,15 @@ struct AddedPlantView: View {
                 }
                 .frame(maxWidth: .infinity, alignment: .center)
             }
+            .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
+            .background(Color.white)
+            
         }
-        }
-        
 }
 
 #Preview {
     let plants = ModelData().plants
     return Group {
-        AddedPlantView(plant: plants[7])
+        AddedPlantViewMac(plant: plants[7])
     }
 }
