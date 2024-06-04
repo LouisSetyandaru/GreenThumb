@@ -11,6 +11,7 @@ struct HomeView: View {
     @Environment(ModelData.self) var modelData
     @State private var searchText = ""
     @State private var selectedFilter: FilterType = .all
+
     
     enum FilterType {
         case all, outdoors, indoors
@@ -25,7 +26,7 @@ struct HomeView: View {
     }
     
     var body: some View {
-        NavigationView {
+        NavigationStack  {
             ScrollView {
                 VStack(alignment: .leading) {
                     HStack {
@@ -120,6 +121,7 @@ struct HomeView: View {
                 }
             }
             .navigationTitle("Home")
+            
         }
     }
 }
