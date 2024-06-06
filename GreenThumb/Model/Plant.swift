@@ -26,6 +26,7 @@ struct Plant: Hashable, Codable, Identifiable {
     var age: Int
     var plantingAge: Int
     var wateringTime: String
+    var wateringCount: Int
     var plantingSteps: String
     var isWatered: Bool
     var image: String

@@ -43,7 +43,7 @@ struct DetailOwnPlantView: View {
                                 .foregroundColor(.gray)
                                 .padding(.bottom, 10.0)
                             
-                            Text("\(plant.age)")
+                            Text("\(plant.plantingAge) Day")
                                 .font(.footnote)
                                 .fontWeight(.semibold)
                                 .foregroundColor(Color(red: 0.2, green: 0.5, blue: 0.3))
@@ -100,10 +100,9 @@ struct DetailOwnPlantView: View {
                     Spacer().frame(height: 750)
                     ZStack {
                         VStack {
-                            
                             Spacer().frame(height: 20)
-                            
                             Text(plant.name)
+                                .font(.title)
                                 .font(.callout)
                                 .fontWeight(.semibold)
                                 .foregroundColor(Color(red: 0.28627450980392155, green: 0.5215686274509804, blue: 0.3254901960784314))
@@ -118,13 +117,27 @@ struct DetailOwnPlantView: View {
                                 .padding(.horizontal, 6)
                                 .frame(maxWidth: 350.0, alignment: .leading)
                             
-                            Text("Watered Count")
-                                .font(.callout)
-                                .fontWeight(.semibold)
-                                .foregroundColor(Color(red: 0.28627450980392155, green: 0.5215686274509804, blue: 0.3254901960784314))
+                            Divider()
+                            HStack{
+                                Text("Watered Count")
+                                    .font(.callout)
+                                    .fontWeight(.semibold)
+                                    .foregroundColor(Color(red: 0.28627450980392155, green: 0.5215686274509804, blue: 0.3254901960784314))
+                                
+                                    .padding(.vertical, 20.0)
+                                
+                                
+                                Spacer()
+                                
+                                Text("\(plant.wateringCount)")
+                                    .font(.callout)
+                                    .fontWeight(.semibold)
+                                    .foregroundColor(Color(red: 0.28627450980392155, green: 0.5215686274509804, blue: 0.3254901960784314))
+                                    .frame(maxWidth: 40.0, alignment: .leading)
+                                
+                            }
+                            .frame(maxWidth: 350.0, alignment: .leading)
                             
-                                .padding(.vertical, 20.0)
-                                .frame(maxWidth: 350.0, alignment: .leading)
                             
                             Text("You can watering only 100ml water in every watering.")
                                 .font(.footnote)
@@ -132,11 +145,33 @@ struct DetailOwnPlantView: View {
                                 .padding(.horizontal, 6)
                                 .frame(maxWidth: 350.0, alignment: .leading)
                             
+                            Divider()
+                            HStack{
+                                Text("Watered Time")
+                                    .font(.callout)
+                                    .fontWeight(.semibold)
+                                    .foregroundColor(Color(red: 0.28627450980392155, green: 0.5215686274509804, blue: 0.3254901960784314))
+                                
+                                    .padding(.vertical, 20.0)
+                                
+                                
+                                Spacer()
+                                
+                                Text("\(plant.wateringTime)")
+                                    .font(.callout)
+                                    .fontWeight(.semibold)
+                                    .foregroundColor(Color(red: 0.28627450980392155, green: 0.5215686274509804, blue: 0.3254901960784314))
+                                    .frame(maxWidth: 70.0, alignment: .leading)
+                                
+                            }
+                            .frame(maxWidth: 350.0, alignment: .leading)
                             
-                            Spacer()
+                            Divider()
+                            
                             HStack(alignment: .center) {
                                 Button(action: {
-                                    //                           selectedFilter = .all
+                                    //                                plant.wateringCount += 1
+                                    //                                                      savePlantData(plant: plant)
                                 }) {
                                     Text("Snooze Watering")
                                         .padding()
@@ -144,8 +179,10 @@ struct DetailOwnPlantView: View {
                                         .foregroundColor(Color.white)
                                         .cornerRadius(20)
                                 }
+                                
                                 Button(action: {
-                                    //                                    selectedFilter = .all
+                                    
+                                    //                                    plant.wateringCount += 1
                                 }) {
                                     Text("Done Watering")
                                         .padding()
@@ -168,6 +205,12 @@ struct DetailOwnPlantView: View {
         
     }
 }
+//// Function to save plant data to JSON (replace with your implementation)
+// func savePlantData(plant: Plant) {
+//   // Your logic to save plant data to the JSON file
+//   print("Plant data saved: \(plant)") // Placeholder for now
+// }
+//}
 
 #Preview {
     let plants = ModelData().plants
