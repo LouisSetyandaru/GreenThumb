@@ -45,16 +45,6 @@ struct MyPlantsViewMac: View {
                             .cornerRadius(15)
                     }.cornerRadius(15)
                     
-                    // Profile button
-                    Button(action: {
-                        // Action for the profile button
-                    }) {
-                        Text("Profile")
-                            .foregroundColor(.white)
-                            .frame(width: 80, height: 40)
-                            .background(Color(red: 199/255, green: 219/255, blue: 199/255))
-                            .cornerRadius(15)
-                    }.cornerRadius(15)
                     
                     // Notification button
                     Button(action: {
@@ -80,7 +70,7 @@ struct MyPlantsViewMac: View {
                     
                     VStack {
                         ForEach(filteredPlants) { plant in
-                            NavigationLink(destination: DetailViewMac(plant: plant)) {
+                            NavigationLink(destination: DetailOwnViewMac(plant: plant)) {
                                 PlantCardMacOS(plant: plant)
                             }
                         }

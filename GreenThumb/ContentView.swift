@@ -32,11 +32,12 @@ struct ContentView: View {
                     }
                     .tag(Tab.list)
             }
+            .accentColor(Color(red: 0.2, green: 0.5, blue: 0.3))
 
             if showLoadingView {
                 LoadingView()
                     .opacity(isLoading ? 1 : 0)
-                    .animation(.easeOut(duration: 1), value: isLoading)
+                    .animation(.easeOut(duration: 0.2), value: isLoading)
             }
         }
         .onAppear {

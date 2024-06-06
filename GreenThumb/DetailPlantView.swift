@@ -150,10 +150,10 @@ struct DetailPlantView: View {
                                 Spacer()
                                 
                                 NavigationLink(destination: AddedPlantView(plant: plant), isActive: $navigateStepToPlant) {
-                                                                    PlantThisButton(isSet: $modelData.plants[plantIndex].isOnList, navigateStepToPlant: $navigateStepToPlant)
-                                                                }
-                                                              
-
+                                    PlantThisButton(isSet: $modelData.plants[plantIndex].isOnList, navigateStepToPlant: $navigateStepToPlant)
+                                }
+                                
+                                
                                 
                                 Spacer().frame(height: 30)
                             }
@@ -169,6 +169,7 @@ struct DetailPlantView: View {
         }
     }
 }
+
 
 func formatPlantingSteps(_ steps: String) -> String {
     let stepsArray = steps.split(separator: " ")

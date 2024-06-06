@@ -48,18 +48,7 @@ struct HomeViewMac: View {
                     
                     // Home button
                     NavigationLink(destination: MyPlantsViewMac()) {
-                        Text("My Planta")
-                            .foregroundColor(.white)
-                            .frame(width: 80, height: 40)
-                            .background(Color(red: 199/255, green: 219/255, blue: 199/255))
-                            .cornerRadius(15)
-                    }.cornerRadius(15)
-                    
-                    // Profile button
-                    Button(action: {
-                        // Action for the profile button
-                    }) {
-                        Text("Profile")
+                        Text("My Plants")
                             .foregroundColor(.white)
                             .frame(width: 80, height: 40)
                             .background(Color(red: 199/255, green: 219/255, blue: 199/255))
@@ -88,7 +77,7 @@ struct HomeViewMac: View {
                     
                     VStack(alignment: .center) {
                         
-                        HStack(spacing: 15) {
+                        HStack(spacing: 20) {
                             ForEach(modelData.plants.filter { $0.isFeatured }) { plant in
                                 
                                 NavigationLink(destination: DetailViewMac(plant: plant)) {
