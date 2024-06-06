@@ -12,7 +12,7 @@ struct LoadingView: View {
 
     var body: some View {
         ZStack {
-            LinearGradient(gradient: Gradient(colors: [Color.green, Color.blue]),
+            LinearGradient(gradient: Gradient(colors: [Color.green, Color(red: 73/255, green: 133/255, blue: 83/255)]),
                            startPoint: .topLeading,
                            endPoint: .bottomTrailing)
                 .edgesIgnoringSafeArea(.all)
@@ -21,7 +21,7 @@ struct LoadingView: View {
                 ProgressView()
                     .progressViewStyle(CircularProgressViewStyle(tint: .white))
                     .scaleEffect(2)
-                    .rotationEffect(Angle(degrees: isAnimating ? 36 : 0))
+                    .rotationEffect(Angle(degrees: isAnimating ? 360 : 0))
                     .animation(Animation.linear(duration: 1).repeatForever(autoreverses: false))
                     .onAppear {
                         isAnimating = true
