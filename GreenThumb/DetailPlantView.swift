@@ -51,12 +51,12 @@ struct DetailPlantView: View {
                             
                             VStack(alignment: .leading) {
                                 
-                                Text("Age")
+                                Text("Estimated to live up to")
                                     .font(.footnote)
                                     .foregroundColor(.gray)
                                     .padding(.bottom, 10.0)
                                 
-                                Text("\(plant.age)")
+                                Text("\(plant.age) Years")
                                     .font(.footnote)
                                     .fontWeight(.semibold)
                                     .foregroundColor(Color(red: 0.2, green: 0.5, blue: 0.3))

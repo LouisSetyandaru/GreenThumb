@@ -6,22 +6,27 @@
 //
 
 import SwiftUI
+import UserNotifications
 
 struct StepToPlant: View {
     
-//    @Environment(ModelData.self) var modelData
+    //    @Environment(ModelData.self) var modelData
     
     var plant: Plant
     @State private var navigateBack = false
+    @State private var showingNotificationRequestAlert = false
+    @State private var notificationContent = UNMutableNotificationContent()
     
-//    var plantIndex: Int {
-//        modelData.plants.firstIndex(where: { $0.id == plant.id })!
-//    }
+    
+    
+    //    var plantIndex: Int {
+    //        modelData.plants.firstIndex(where: { $0.id == plant.id })!
+    //    }
     
     var body: some View {
         
-//        @Bindable var modelData = modelData
-
+        //        @Bindable var modelData = modelData
+        
         NavigationView {
             ScrollView {
                 VStack {
@@ -131,22 +136,66 @@ struct StepToPlant: View {
                     }
                     
                     NavigationLink(destination: HomeView().environment(ModelData())) {
-                      
-                        Text("Go to Step")
+                        Text("Your Own Plant")
                             .padding(.vertical, 15.0)
                             .padding(.horizontal, 80.0)
                             .background(Color(red: 73/255, green: 133/255, blue: 83/255))
                             .foregroundColor(Color.white)
                             .cornerRadius(20)
+                            .onTapGesture {
+                                configureNotification(showAlert: true) // Call notification function
+                            }
                     }
                     .padding()
-                    
                     
                     Spacer()
                 }
             }
             .navigationTitle("Step To Plant")
+            .alert(isPresented: $showingNotificationRequestAlert) {
+                Alert(
+                    title: Text("Notifications"),
+                    message: Text("Would you like to receive notifications?"),
+                    primaryButton: .default(Text("Yes")) {
+                        scheduleNotification() // Schedule notification if user grants permission
+                    },
+                    secondaryButton: .cancel(Text("No"))
+                )
+            }
+        }
+    }
     
+    // Moved notification logic outside the view for better organization
+    func configureNotification(showAlert: Bool) {
+        let center = UNUserNotificationCenter.current()
+        center.requestAuthorization(options: [.alert, .sound]) { (granted, error) in
+            if granted {
+                print("Notifications authorized")
+                showingNotificationRequestAlert = showAlert // Update state based on argument
+                scheduleNotification()
+            } else {
+                print("Notifications denied")
+                // Handle denial as needed (e.g., display an informative message)
+            }
+        }
+    }
+    
+    func scheduleNotification() {
+        notificationContent.title = "GreenThumb Reminder"
+        notificationContent.body = "Don't forget to watering your \(plant.name) at \(plant.wateringTime)!"
+        notificationContent.sound = UNNotificationSound.default
+        
+        // Set trigger for notification (replace with desired timing)
+        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5, repeats: false)
+        
+        let request = UNNotificationRequest(identifier: UUID().uuidString, content: notificationContent, trigger: trigger)
+        let center = UNUserNotificationCenter.current()
+        center.add(request) { (error) in
+            if let error = error {
+                print("Error scheduling notification: \(error)")
+            } else {
+                print("Notification scheduled successfully")
+            }
         }
     }
 }
@@ -157,3 +206,4 @@ struct StepToPlant: View {
         StepToPlant(plant: plants[7])
     }
 }
+
