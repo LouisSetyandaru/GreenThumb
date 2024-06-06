@@ -108,7 +108,7 @@ struct DetailOwnPlantView: View {
                                 .foregroundColor(Color(red: 0.28627450980392155, green: 0.5215686274509804, blue: 0.3254901960784314))
                             
                                 .padding(.vertical, 20.0)
-                                .frame(maxWidth: 350.0, alignment: .leading)
+//                                .frame(maxWidth: 350.0, alignment: .leading)
                             
                             
                             Text(plant.description)
