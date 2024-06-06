@@ -8,6 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		041245072C06EDCA004344C1 /* DetailOwnPlantView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041245062C06EDCA004344C1 /* DetailOwnPlantView.swift */; };
+		0433D7E12C1173EB002C7ED0 /* HomeViewWatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0433D7E02C1173EB002C7ED0 /* HomeViewWatch.swift */; };
+		0433D7E32C117409002C7ED0 /* PlantCardWatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0433D7E22C117409002C7ED0 /* PlantCardWatch.swift */; };
+		0433D7E52C117424002C7ED0 /* DetailPlantViewWatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0433D7E42C117424002C7ED0 /* DetailPlantViewWatch.swift */; };
+		0433D7E72C117444002C7ED0 /* PlantThisButtonWatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0433D7E62C117444002C7ED0 /* PlantThisButtonWatch.swift */; };
+		0433D7E82C1174F5002C7ED0 /* Plant.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29CBA5A2BF5EE5D00DE2F8F /* Plant.swift */; };
+		0433D7E92C1174FC002C7ED0 /* plantData.json in Resources */ = {isa = PBXBuildFile; fileRef = A2B4318F2BF614A60075FE10 /* plantData.json */; };
+		0433D7EA2C117529002C7ED0 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B4318B2BF607760075FE10 /* CircleImage.swift */; };
 		0450464A2C074BC900A92567 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045046492C074BC900A92567 /* MapView.swift */; };
 		0465AAC82BEE0C81001331D1 /* GreenThumbApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0465AAC72BEE0C81001331D1 /* GreenThumbApp.swift */; };
 		0465AACA2BEE0C81001331D1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0465AAC92BEE0C81001331D1 /* ContentView.swift */; };
@@ -30,7 +37,6 @@
 		24A646CF2BF79E80004C0906 /* DetailPlantView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24A646CE2BF79E80004C0906 /* DetailPlantView.swift */; };
 		24E1FD3D2C096BAB003D6D6B /* PlantThisButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E1FD3C2C096BAB003D6D6B /* PlantThisButton.swift */; };
 		A20A62F92BFE1E5E00963A72 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0465AACB2BEE0C83001331D1 /* Assets.xcassets */; };
-		A20A62FA2BFE26E300963A72 /* GreenThumbApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0465AAC72BEE0C81001331D1 /* GreenThumbApp.swift */; };
 		A20A62FB2BFE26E300963A72 /* GreenThumbApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0465AAC72BEE0C81001331D1 /* GreenThumbApp.swift */; };
 		A29CBA5B2BF5EE5D00DE2F8F /* Plant.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29CBA5A2BF5EE5D00DE2F8F /* Plant.swift */; };
 		A2B431852BF5F3210075FE10 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B431842BF5F3210075FE10 /* ModelData.swift */; };
@@ -40,7 +46,6 @@
 		A2B431902BF614A70075FE10 /* plantData.json in Resources */ = {isa = PBXBuildFile; fileRef = A2B4318F2BF614A60075FE10 /* plantData.json */; };
 		A2B431932BF659E40075FE10 /* PlantCardV2.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B431922BF659E40075FE10 /* PlantCardV2.swift */; };
 		A2F5985A2BFDFF9900104959 /* PlantCardMacOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F598592BFDFF9900104959 /* PlantCardMacOS.swift */; };
-		A2F5985B2BFE005200104959 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0465AACB2BEE0C83001331D1 /* Assets.xcassets */; };
 		A2F598612BFE00E400104959 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B431842BF5F3210075FE10 /* ModelData.swift */; };
 		A2F598622BFE00E400104959 /* Plant.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29CBA5A2BF5EE5D00DE2F8F /* Plant.swift */; };
 		A2F598632BFE00E400104959 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B4318B2BF607760075FE10 /* CircleImage.swift */; };
@@ -76,6 +81,10 @@
 
 /* Begin PBXFileReference section */
 		041245062C06EDCA004344C1 /* DetailOwnPlantView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailOwnPlantView.swift; sourceTree = "<group>"; };
+		0433D7E02C1173EB002C7ED0 /* HomeViewWatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewWatch.swift; sourceTree = "<group>"; };
+		0433D7E22C117409002C7ED0 /* PlantCardWatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantCardWatch.swift; sourceTree = "<group>"; };
+		0433D7E42C117424002C7ED0 /* DetailPlantViewWatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPlantViewWatch.swift; sourceTree = "<group>"; };
+		0433D7E62C117444002C7ED0 /* PlantThisButtonWatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantThisButtonWatch.swift; sourceTree = "<group>"; };
 		045046492C074BC900A92567 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		0465AAC42BEE0C81001331D1 /* GreenThumb.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GreenThumb.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0465AAC72BEE0C81001331D1 /* GreenThumbApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenThumbApp.swift; sourceTree = "<group>"; };
@@ -193,6 +202,10 @@
 				0465AAE32BEF7BF7001331D1 /* ContentView.swift */,
 				0465AAE52BEF7BFB001331D1 /* Assets.xcassets */,
 				0465AAE72BEF7BFB001331D1 /* Preview Content */,
+				0433D7E02C1173EB002C7ED0 /* HomeViewWatch.swift */,
+				0433D7E22C117409002C7ED0 /* PlantCardWatch.swift */,
+				0433D7E42C117424002C7ED0 /* DetailPlantViewWatch.swift */,
+				0433D7E62C117444002C7ED0 /* PlantThisButtonWatch.swift */,
 			);
 			path = "WatchOS_GreenThumb Watch App";
 			sourceTree = "<group>";
@@ -403,8 +416,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				0465AAE92BEF7BFB001331D1 /* Preview Assets.xcassets in Resources */,
-				A2F5985B2BFE005200104959 /* Assets.xcassets in Resources */,
 				0465AAE62BEF7BFB001331D1 /* Assets.xcassets in Resources */,
+				0433D7E92C1174FC002C7ED0 /* plantData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -447,10 +460,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A20A62FA2BFE26E300963A72 /* GreenThumbApp.swift in Sources */,
+				0433D7E12C1173EB002C7ED0 /* HomeViewWatch.swift in Sources */,
+				0433D7E82C1174F5002C7ED0 /* Plant.swift in Sources */,
+				0433D7E52C117424002C7ED0 /* DetailPlantViewWatch.swift in Sources */,
 				0465AAE42BEF7BF7001331D1 /* ContentView.swift in Sources */,
+				0433D7E32C117409002C7ED0 /* PlantCardWatch.swift in Sources */,
 				0465AAE22BEF7BF7001331D1 /* WatchOS_GreenThumbApp.swift in Sources */,
 				A2F598692BFE1DE400104959 /* ModelData.swift in Sources */,
+				0433D7E72C117444002C7ED0 /* PlantThisButtonWatch.swift in Sources */,
+				0433D7EA2C117529002C7ED0 /* CircleImage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -687,7 +705,7 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 10.4;
+				WATCHOS_DEPLOYMENT_TARGET = 10.2;
 			};
 			name = Debug;
 		};
@@ -716,7 +734,7 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 10.4;
+				WATCHOS_DEPLOYMENT_TARGET = 10.2;
 			};
 			name = Release;
 		};
