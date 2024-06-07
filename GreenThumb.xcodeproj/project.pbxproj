@@ -16,7 +16,6 @@
 		0433D7E92C1174FC002C7ED0 /* plantData.json in Resources */ = {isa = PBXBuildFile; fileRef = A2B4318F2BF614A60075FE10 /* plantData.json */; };
 		0433D7EA2C117529002C7ED0 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B4318B2BF607760075FE10 /* CircleImage.swift */; };
 		044193802C12A98400080CF1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0441937F2C12A98400080CF1 /* AppDelegate.swift */; };
-		044193812C12A98400080CF1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0441937F2C12A98400080CF1 /* AppDelegate.swift */; };
 		0450464A2C074BC900A92567 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045046492C074BC900A92567 /* MapView.swift */; };
 		0465AAC82BEE0C81001331D1 /* GreenThumbApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0465AAC72BEE0C81001331D1 /* GreenThumbApp.swift */; };
 		0465AACA2BEE0C81001331D1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0465AAC92BEE0C81001331D1 /* ContentView.swift */; };
@@ -41,7 +40,6 @@
 		24DADFFD2C10CDC2006A161A /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24DADFFC2C10CDC2006A161A /* LoadingView.swift */; };
 		24EA83B32C11B76800749850 /* DetailOwnViewMac.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24EA83B22C11B76700749850 /* DetailOwnViewMac.swift */; };
 		A20A62F92BFE1E5E00963A72 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0465AACB2BEE0C83001331D1 /* Assets.xcassets */; };
-		A20A62FB2BFE26E300963A72 /* GreenThumbApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0465AAC72BEE0C81001331D1 /* GreenThumbApp.swift */; };
 		A29CBA5B2BF5EE5D00DE2F8F /* Plant.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29CBA5A2BF5EE5D00DE2F8F /* Plant.swift */; };
 		A2B431852BF5F3210075FE10 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B431842BF5F3210075FE10 /* ModelData.swift */; };
 		A2B4318A2BF5F3860075FE10 /* PlantCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B431892BF5F3860075FE10 /* PlantCard.swift */; };
@@ -492,8 +490,6 @@
 				242A83722C0C94ED00B88590 /* AddedPlantViewMac.swift in Sources */,
 				A2F598612BFE00E400104959 /* ModelData.swift in Sources */,
 				24B477BF2C1225F2000F7340 /* PlantThisButton.swift in Sources */,
-				044193812C12A98400080CF1 /* AppDelegate.swift in Sources */,
-				A20A62FB2BFE26E300963A72 /* GreenThumbApp.swift in Sources */,
 				A2F598622BFE00E400104959 /* Plant.swift in Sources */,
 				24EA83B32C11B76800749850 /* DetailOwnViewMac.swift in Sources */,
 				A2F598672BFE1A8300104959 /* HomeViewMac.swift in Sources */,
