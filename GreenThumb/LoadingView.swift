@@ -29,7 +29,6 @@ struct LoadingView: View {
                     .onAppear {
                         isAnimating = true
                     }
-                    .padding(.top, 20)
             }
         }
     }
