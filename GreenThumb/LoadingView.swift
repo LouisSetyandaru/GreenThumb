@@ -18,19 +18,17 @@ struct LoadingView: View {
                 .edgesIgnoringSafeArea(.all)
 
             VStack {
-                ProgressView()
-                    .progressViewStyle(CircularProgressViewStyle(tint: .white))
-                    .scaleEffect(2)
-                    .rotationEffect(Angle(degrees: isAnimating ? 360 : 0))
-                    .animation(Animation.linear(duration: 1).repeatForever(autoreverses: false))
-                    .onAppear {
-                        isAnimating = true
-                    }
+                Spacer().frame(height: 30)
 
                 Text("GreenThumb")
                     .font(.largeTitle)
                     .fontWeight(.bold)
                     .foregroundColor(.white)
+                    .opacity(isAnimating ? 1 : 0)
+                    .animation(Animation.easeInOut(duration: 1), value: isAnimating)
+                    .onAppear {
+                        isAnimating = true
+                    }
                     .padding(.top, 20)
             }
         }

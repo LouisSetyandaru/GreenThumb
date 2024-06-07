@@ -8,75 +8,78 @@
 import SwiftUI
 
 struct MyPlantsView: View {
+    
     @Environment(ModelData.self) var modelData
     @State private var searchText = ""
-
-    
-    var filteredPlants: [Plant] {
-        modelData.plants.filter { $0.isOnList == true }
-    }
-
     
     var body: some View {
-        ScrollView {
-            VStack(alignment: .leading) {
-                HStack {
-                    TextField("Search", text: $searchText)
-                        .padding(.leading, 40.0)
-                        .frame(height: 40)
-                        .background(Color(.systemGray6))
-                        .cornerRadius(8)
-                        .overlay(
-                            HStack {
-                                Image(systemName: "magnifyingglass")
-                                Spacer()
-                            }
-                                .padding(.horizontal,11.0)
-                                .foregroundColor(.gray)
-                        )
-                    
-                    Button(action: {
-                        // Notification action
-                    }) {
-                        Image(systemName: "bell")
-                            .padding()
-                    }
+        NavigationStack {
+            ScrollView {
+                VStack(alignment: .leading) {
+                    searchSection
+                    Text("My Plants")
+                        .font(.title2)
+                        .fontWeight(.bold)
+                        .padding(.horizontal)
+                        .padding(.bottom, 40)
+                    myPlantsGridSection
+                    Spacer()
                 }
-                .padding()
-                
-                HStack(alignment: .center) {
-                    
-                    
-                    
-            
-                }
-                .padding([.bottom, .trailing])
-                .padding(.leading, 25.0)
-                
-                Text("My Plants")
-                    .font(.title2)
-                    .fontWeight(.bold)
-                    .padding(.horizontal)
-
-                
-                
-                
-                ForEach(filteredPlants) { plant in
-                    if plant.isWatered {
-                        PlantCardV2(plant: plant)
-                    } else {
-                        PlantCardBasah(plant: plant)
-                    }
-                }
-                .padding(.leading, 20.0)
-                .padding(.bottom, 9)
-
-                Spacer()
-
             }
         }
     }
+    
+    private var searchSection: some View {
+        HStack {
+            TextField("Search", text: $searchText)
+                .padding(.leading, 40.0)
+                .frame(height: 40)
+                .background(Color(.systemGray6))
+                .cornerRadius(8)
+                .overlay(
+                    HStack {
+                        Image(systemName: "magnifyingglass")
+                        Spacer()
+                    }
+                        .padding(.horizontal,11.0)
+                        .foregroundColor(.gray)
+                )
+            
+            Button(action: {
+                // Notification action
+            }) {
+                Image(systemName: "bell")
+                    .padding()
+            }
+        }
+        .padding()
+    }
+    
+    private var myPlantsGridSection: some View {
+        LazyVGrid(columns: [GridItem(.flexible(), spacing: -10), GridItem(.flexible(), spacing: -10)], spacing: 20) {
+            ForEach(filteredPlants) { plant in
+                if plant.isWatered {
+                    NavigationLink(destination: DetailOwnPlantView(plant: plant)) {
+                        PlantCardV2(plant: plant)
+                            .frame(maxWidth: .infinity)
+                    }
+                } else {
+                    NavigationLink(destination: DetailOwnPlantView(plant: plant)) {
+                        PlantCardBasah(plant: plant)
+                            .frame(maxWidth: .infinity)
+                    }
+                }
+            }
+        }
+        .padding([.bottom], 20)
+    }
+    
+    
+    var filteredPlants: [Plant] {
+        modelData.plants.filter { $0.isOnList }
+    }
 }
+
 #Preview {
     MyPlantsView().environment(ModelData())
 }

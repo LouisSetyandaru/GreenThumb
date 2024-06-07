@@ -2,7 +2,7 @@
 //  PlantThisButton.swift
 //  GreenThumb
 //
-//  Created by Michael Sin on 31/05/24.
+//  Created by Michael Sin on 06/06/24.
 //
 
 import SwiftUI
@@ -11,7 +11,6 @@ struct PlantThisButton: View {
     
     @Binding var isSet: Bool
     @Binding var navigateStepToPlant: Bool
-    
     
     var body: some View {
         Button {
