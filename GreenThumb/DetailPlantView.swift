@@ -56,7 +56,7 @@ struct DetailPlantView: View {
                                     .foregroundColor(.gray)
                                     .padding(.bottom, 10.0)
                                 
-                                Text("\(plant.age) Years")
+                                Text("\(plant.age) Week")
                                     .font(.footnote)
                                     .fontWeight(.semibold)
                                     .foregroundColor(Color(red: 0.2, green: 0.5, blue: 0.3))

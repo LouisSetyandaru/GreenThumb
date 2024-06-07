@@ -17,7 +17,8 @@ struct MyPlantsView: View {
             ScrollView {
                 VStack(alignment: .leading) {
                     searchSection
-                    Text("My Plants")
+                    userHeaderSection
+                    Text("Tanaman Saya")
                         .font(.title2)
                         .fontWeight(.bold)
                         .padding(.horizontal)
@@ -53,6 +54,32 @@ struct MyPlantsView: View {
             }
         }
         .padding()
+        
+    }
+    
+    private var userHeaderSection: some View {
+        HStack{
+            Image("userImage")
+                .resizable()
+                .scaledToFit()
+                .frame(width: 160, height: 100)
+                .clipShape(Circle())
+                .overlay(Circle().stroke(Color.gray, lineWidth: 4))
+            
+            VStack(alignment: .leading) {
+                Text("Mario De Caprio")
+                //                                .font(.title)
+                    .font(.callout)
+                    .fontWeight(.bold)
+                    .foregroundColor(Color(red: 0.28627450980392155, green: 0.5215686274509804, blue: 0.3254901960784314))
+                Text("Plant Lovers")
+                    .font(.caption)
+                    .foregroundColor(Color(red: 0.28627450980392155, green: 0.5215686274509804, blue: 0.3254901960784314))
+            }
+            Spacer()
+        }
+        .padding(.horizontal)
+        .padding(.bottom, 40)
     }
     
     private var myPlantsGridSection: some View {

@@ -46,18 +46,18 @@ struct DetailOwnPlantView: View {
                             
                             VStack(alignment: .leading) {
                                 
-                                Text("Age")
+                                Text("Umur Tanaman")
                                     .font(.footnote)
                                     .foregroundColor(.gray)
                                     .padding(.bottom, 10.0)
                                 
-                                Text("\(plant.plantingAge) Day")
+                                Text("\(plant.plantingAge) Hari")
                                     .font(.footnote)
                                     .fontWeight(.semibold)
                                     .foregroundColor(Color(red: 0.2, green: 0.5, blue: 0.3))
                                     .padding(.bottom, 20.0)
                                 
-                                Text("Latin name")
+                                Text("Nama Latin")
                                     .font(.footnote)
                                     .foregroundColor(.gray)
                                     .padding(.bottom, 10.0)
@@ -68,7 +68,7 @@ struct DetailOwnPlantView: View {
                                     .foregroundColor(Color(red: 0.2, green: 0.5, blue: 0.3))
                                     .padding(.bottom, 20.0)
                                 
-                                Text("Type")
+                                Text("Tipe")
                                     .font(.footnote)
                                     .foregroundColor(.gray)
                                     .padding(.bottom, 10.0)
@@ -130,7 +130,7 @@ struct DetailOwnPlantView: View {
                                 
                                 Divider()
                                 HStack{
-                                    Text("Watered Count")
+                                    Text("Penyiraman Ke-")
                                         .font(.callout)
                                         .fontWeight(.semibold)
                                         .foregroundColor(Color(red: 0.28627450980392155, green: 0.5215686274509804, blue: 0.3254901960784314))
@@ -149,7 +149,7 @@ struct DetailOwnPlantView: View {
                                 .frame(maxWidth: 350.0, alignment: .leading)
                                 
                                 
-                                Text("Apply 100ml of water per watering session.")
+                                Text("Berikan 100ml air setiap penyiraman.")
                                     .font(.footnote)
                                     .foregroundColor(.gray)
                                     .padding(.horizontal, 6)
@@ -157,7 +157,7 @@ struct DetailOwnPlantView: View {
                                 
                                 Divider()
                                 HStack{
-                                    Text("Watered Time")
+                                    Text("Waktu Menyiram")
                                         .font(.callout)
                                         .fontWeight(.semibold)
                                         .foregroundColor(Color(red: 0.28627450980392155, green: 0.5215686274509804, blue: 0.3254901960784314))
