@@ -15,6 +15,8 @@
 		0433D7E82C1174F5002C7ED0 /* Plant.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29CBA5A2BF5EE5D00DE2F8F /* Plant.swift */; };
 		0433D7E92C1174FC002C7ED0 /* plantData.json in Resources */ = {isa = PBXBuildFile; fileRef = A2B4318F2BF614A60075FE10 /* plantData.json */; };
 		0433D7EA2C117529002C7ED0 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B4318B2BF607760075FE10 /* CircleImage.swift */; };
+		044193802C12A98400080CF1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0441937F2C12A98400080CF1 /* AppDelegate.swift */; };
+		044193812C12A98400080CF1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0441937F2C12A98400080CF1 /* AppDelegate.swift */; };
 		0450464A2C074BC900A92567 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045046492C074BC900A92567 /* MapView.swift */; };
 		0465AAC82BEE0C81001331D1 /* GreenThumbApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0465AAC72BEE0C81001331D1 /* GreenThumbApp.swift */; };
 		0465AACA2BEE0C81001331D1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0465AAC92BEE0C81001331D1 /* ContentView.swift */; };
@@ -87,6 +89,7 @@
 		0433D7E22C117409002C7ED0 /* PlantCardWatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantCardWatch.swift; sourceTree = "<group>"; };
 		0433D7E42C117424002C7ED0 /* DetailPlantViewWatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPlantViewWatch.swift; sourceTree = "<group>"; };
 		0433D7E62C117444002C7ED0 /* PlantThisButtonWatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantThisButtonWatch.swift; sourceTree = "<group>"; };
+		0441937F2C12A98400080CF1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		045046492C074BC900A92567 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		0465AAC42BEE0C81001331D1 /* GreenThumb.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GreenThumb.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0465AAC72BEE0C81001331D1 /* GreenThumbApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenThumbApp.swift; sourceTree = "<group>"; };
@@ -185,9 +188,10 @@
 				041245062C06EDCA004344C1 /* DetailOwnPlantView.swift */,
 				04EBBA9D2C096832003E4707 /* StepToPlant.swift */,
 				242A83692C0B6E5D00B88590 /* AddedPlantView.swift */,
+				0441937F2C12A98400080CF1 /* AppDelegate.swift */,
+				24DADFFC2C10CDC2006A161A /* LoadingView.swift */,
 				0465AACB2BEE0C83001331D1 /* Assets.xcassets */,
 				0465AACD2BEE0C83001331D1 /* Preview Content */,
-				24DADFFC2C10CDC2006A161A /* LoadingView.swift */,
 			);
 			path = GreenThumb;
 			sourceTree = "<group>";
@@ -455,6 +459,7 @@
 				04E186CE2BF72D1100779890 /* MyPlantsView.swift in Sources */,
 				A2B4318E2BF610AD0075FE10 /* HomeView.swift in Sources */,
 				A2B431932BF659E40075FE10 /* PlantCardV2.swift in Sources */,
+				044193802C12A98400080CF1 /* AppDelegate.swift in Sources */,
 				242A836A2C0B6E5D00B88590 /* AddedPlantView.swift in Sources */,
 				041245072C06EDCA004344C1 /* DetailOwnPlantView.swift in Sources */,
 				04E186D02BF72EE900779890 /* PlantCardBasah.swift in Sources */,
@@ -487,6 +492,7 @@
 				242A83722C0C94ED00B88590 /* AddedPlantViewMac.swift in Sources */,
 				A2F598612BFE00E400104959 /* ModelData.swift in Sources */,
 				24B477BF2C1225F2000F7340 /* PlantThisButton.swift in Sources */,
+				044193812C12A98400080CF1 /* AppDelegate.swift in Sources */,
 				A20A62FB2BFE26E300963A72 /* GreenThumbApp.swift in Sources */,
 				A2F598622BFE00E400104959 /* Plant.swift in Sources */,
 				24EA83B32C11B76800749850 /* DetailOwnViewMac.swift in Sources */,

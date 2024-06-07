@@ -13,10 +13,10 @@ struct StepToPlant: View {
     var plant: Plant
     @State private var navigateBack = false
     @State private var showingNotificationRequestAlert = false
-    @State private var notificationContent = UNMutableNotificationContent()
+//    @State private var notificationContent = UNMutableNotificationContent()
+    @State private var shouldNavigateToHome = false
     
     var body: some View {
-        NavigationView {
             ScrollView {
                 VStack {
                     Divider()
@@ -27,6 +27,9 @@ struct StepToPlant: View {
                     stepThreeSection
                     Spacer()
                     ownPlantButton
+                    NavigationLink(destination: HomeView().environment(ModelData()), isActive: $shouldNavigateToHome, label: {
+                        EmptyView()
+                    })
                 }
             }
             .navigationTitle("Step To Plant")
@@ -40,7 +43,6 @@ struct StepToPlant: View {
                     secondaryButton: .cancel(Text("No"))
                 )
             }
-        }
     }
     
     private var stepOneSection: some View {
@@ -134,18 +136,28 @@ struct StepToPlant: View {
     
     private var ownPlantButton: some View {
         Button(action: {
-            configureNotification(showAlert: true)
+            checkNotificationPermission()
         }) {
-            NavigationLink(destination: HomeView().environment(ModelData())) {
-                Text("Your Own Plant")
-                    .padding(.vertical, 15)
-                    .padding(.horizontal, 80)
-                    .background(Color(red: 73/255, green: 133/255, blue: 83/255))
-                    .foregroundColor(Color.white)
-                    .cornerRadius(20)
-            }
+//            DelayedNavigationLink(destination: HomeView().environment(ModelData()), delay: 5)
+            Text("Your Own Plant")
+              .padding(.vertical, 15)
+              .padding(.horizontal, 80)
+              .background(Color(red: 73/255, green: 133/255, blue: 83/255))
+              .foregroundColor(Color.white)
+              .cornerRadius(20)
         }
         .padding()
+    }
+    
+    func checkNotificationPermission() {
+        let center = UNUserNotificationCenter.current()
+        center.getNotificationSettings { settings in            if settings.authorizationStatus == .authorized {
+            debugPrint("authorized")
+                scheduleNotification()
+            } else if settings.authorizationStatus == .notDetermined {
+                showingNotificationRequestAlert = true
+            }
+        }
     }
     
     func configureNotification(showAlert: Bool) {
@@ -153,7 +165,7 @@ struct StepToPlant: View {
         center.requestAuthorization(options: [.alert, .sound]) { (granted, error) in
             if granted {
                 print("Notifications authorized")
-                showingNotificationRequestAlert = showAlert
+                showingNotificationRequestAlert = false
                 scheduleNotification()
             } else {
                 print("Notifications denied")
@@ -162,10 +174,11 @@ struct StepToPlant: View {
     }
     
     func scheduleNotification() {
+        let notificationContent = UNMutableNotificationContent()
         notificationContent.title = "GreenThumb Reminder"
         notificationContent.body = "Don't forget to water your \(plant.name) at \(plant.wateringTime)!"
         notificationContent.sound = UNNotificationSound.default
-        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5, repeats: false)
+        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 1, repeats: false)
         let request = UNNotificationRequest(identifier: UUID().uuidString, content: notificationContent, trigger: trigger)
         let center = UNUserNotificationCenter.current()
         center.add(request) { (error) in
@@ -173,6 +186,7 @@ struct StepToPlant: View {
                 print("Error scheduling notification: \(error)")
             } else {
                 print("Notification scheduled successfully")
+                shouldNavigateToHome = true
             }
         }
     }
