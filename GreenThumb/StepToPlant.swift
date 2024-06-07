@@ -32,7 +32,7 @@ struct StepToPlant: View {
                     })
                 }
             }
-            .navigationTitle("Step To Plant")
+            .navigationTitle("Langkah Menanam")
             .alert(isPresented: $showingNotificationRequestAlert) {
                 Alert(
                     title: Text("Notifications"),
@@ -56,7 +56,7 @@ struct StepToPlant: View {
             MapView(coordinate: plant.locationCoordinate)
                 .frame(height: 300)
             Divider()
-            Text("You can look for \(plant.name) seeds in the following stores:")
+            Text("Anda bisa mencari bibit \(plant.name) pada lokasi toko tersebut:")
                 .font(.footnote)
                 .foregroundColor(.gray)
                 .padding(.horizontal, 6)
@@ -107,7 +107,7 @@ struct StepToPlant: View {
     
     private var plantingSection: some View {
         VStack(alignment: .leading) {
-            Text("How to Plant")
+            Text("Cara Menanam :")
                 .font(.callout)
                 .fontWeight(.semibold)
                 .foregroundColor(Color(red: 0.286, green: 0.521, blue: 0.325))
@@ -130,7 +130,19 @@ struct StepToPlant: View {
                 .fontWeight(.semibold)
                 .foregroundColor(Color(red: 0.286, green: 0.521, blue: 0.325))
             Divider()
-            plantingSection
+            
+            Text("Tips & Trik")
+                .font(.callout)
+                .fontWeight(.semibold)
+                .foregroundColor(Color(red: 0.28627450980392155, green: 0.5215686274509804, blue: 0.3254901960784314))
+                .padding(.vertical, 20.0)
+            
+            Text("Selalu siram \(plant.name) anda setiap pagi pada pukul \(plant.wateringTime) pagi dan berikan -+ 100 ml air pada setiap penyiramannya")
+                .font(.footnote)
+                .foregroundColor(.gray)
+                .padding(.horizontal, 6)
+                .frame(maxWidth: 350.0, alignment: .leading)
+            
         }
     }
     
@@ -139,7 +151,7 @@ struct StepToPlant: View {
             checkNotificationPermission()
         }) {
 //            DelayedNavigationLink(destination: HomeView().environment(ModelData()), delay: 5)
-            Text("Your Own Plant")
+            Text("Done")
               .padding(.vertical, 15)
               .padding(.horizontal, 80)
               .background(Color(red: 73/255, green: 133/255, blue: 83/255))
@@ -176,7 +188,7 @@ struct StepToPlant: View {
     func scheduleNotification() {
         let notificationContent = UNMutableNotificationContent()
         notificationContent.title = "GreenThumb Reminder"
-        notificationContent.body = "Don't forget to water your \(plant.name) at \(plant.wateringTime)!"
+        notificationContent.body = "Jangan lupa selalu siram  \(plant.name) anda, pada pukul \(plant.wateringTime)!"
         notificationContent.sound = UNNotificationSound.default
         let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 1, repeats: false)
         let request = UNNotificationRequest(identifier: UUID().uuidString, content: notificationContent, trigger: trigger)
