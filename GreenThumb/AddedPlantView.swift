@@ -19,19 +19,19 @@ struct AddedPlantView: View {
                     
                     Spacer().frame(height: 100)
                     
-                    ZStack {
-                        
-                        Circle()
-                            .fill(Color(red: 0.28627450980392155, green: 0.5215686274509804, blue: 0.3254901960784314).opacity(0.11))
-                            .frame(width: 300.0, height: 300.0)
-//                            .offset(x: -30, y: -200)
-                        
-                        CircleImage(image: Image(plant.image))
-//                            .frame(width: 16.0, height: 580.0)
-                            .padding(.leading, 20) // Reduced padding
-                            .padding([.bottom, .trailing], 20)
-//                            .offset(x: -106,y: 0)
-                    }
+//                    ZStack {
+//                        
+//                        Circle()
+//                            .fill(Color(red: 0.28627450980392155, green: 0.5215686274509804, blue: 0.3254901960784314).opacity(0.11))
+//                            .frame(width: 300.0, height: 300.0)
+////                            .offset(x: -30, y: -200)
+//                        
+//                        CircleImage(image: Image(plant.image))
+////                            .frame(width: 16.0, height: 580.0)
+//                            .padding(.leading, 20) // Reduced padding
+//                            .padding([.bottom, .trailing], 20)
+////                            .offset(x: -106,y: 0)
+//                    }
                     
                     Image("addedplant")
                         .resizable()

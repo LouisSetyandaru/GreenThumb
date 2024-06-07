@@ -110,7 +110,7 @@ struct HomeView: View {
                 .padding(.horizontal)
                 .padding(.vertical, 20)
             
-            LazyVGrid(columns: [GridItem(.flexible(), spacing: -10), GridItem(.flexible(), spacing: -10)], spacing: 20) {
+            LazyVGrid(columns: [GridItem(.flexible(), spacing: -10), GridItem(.flexible(), spacing: -10)], spacing: 10) {
                 ForEach(filteredPlants) { plant in
                     if plant.isOnList {
                         NavigationLink(destination: DetailOwnPlantView(plant: plant)) {

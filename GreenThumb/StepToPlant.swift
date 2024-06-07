@@ -13,10 +13,11 @@ struct StepToPlant: View {
     var plant: Plant
     @State private var navigateBack = false
     @State private var showingNotificationRequestAlert = false
-//    @State private var notificationContent = UNMutableNotificationContent()
+    //    @State private var notificationContent = UNMutableNotificationContent()
     @State private var shouldNavigateToHome = false
     
     var body: some View {
+        NavigationView {
             ScrollView {
                 VStack {
                     Divider()
@@ -27,9 +28,6 @@ struct StepToPlant: View {
                     stepThreeSection
                     Spacer()
                     ownPlantButton
-                    NavigationLink(destination: HomeView().environment(ModelData()), isActive: $shouldNavigateToHome, label: {
-                        EmptyView()
-                    })
                 }
             }
             .navigationTitle("Step To Plant")
@@ -43,6 +41,12 @@ struct StepToPlant: View {
                     secondaryButton: .cancel(Text("No"))
                 )
             }
+        }
+        .background(
+            NavigationLink(destination: HomeView().environment(ModelData()), isActive: $shouldNavigateToHome) {
+                EmptyView()
+            }
+        )
     }
     
     private var stepOneSection: some View {
@@ -138,13 +142,13 @@ struct StepToPlant: View {
         Button(action: {
             checkNotificationPermission()
         }) {
-//            DelayedNavigationLink(destination: HomeView().environment(ModelData()), delay: 5)
+            //            DelayedNavigationLink(destination: HomeView().environment(ModelData()), delay: 5)
             Text("Your Own Plant")
-              .padding(.vertical, 15)
-              .padding(.horizontal, 80)
-              .background(Color(red: 73/255, green: 133/255, blue: 83/255))
-              .foregroundColor(Color.white)
-              .cornerRadius(20)
+                .padding(.vertical, 15)
+                .padding(.horizontal, 80)
+                .background(Color(red: 73/255, green: 133/255, blue: 83/255))
+                .foregroundColor(Color.white)
+                .cornerRadius(20)
         }
         .padding()
     }
@@ -153,10 +157,10 @@ struct StepToPlant: View {
         let center = UNUserNotificationCenter.current()
         center.getNotificationSettings { settings in            if settings.authorizationStatus == .authorized {
             debugPrint("authorized")
-                scheduleNotification()
-            } else if settings.authorizationStatus == .notDetermined {
-                showingNotificationRequestAlert = true
-            }
+            scheduleNotification()
+        } else if settings.authorizationStatus == .notDetermined {
+            showingNotificationRequestAlert = true
+        }
         }
     }
     

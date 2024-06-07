@@ -11,7 +11,8 @@ struct PlantCardV2: View {
     var plant: Plant
     var body: some View {
         VStack(alignment: .center) {
-        
+            
+          
             HStack {
                 
                 ZStack {
@@ -54,7 +55,7 @@ struct PlantCardV2: View {
             
         }
         .background(Color(.systemGreen).opacity(0.1))
-        .frame(width: 150, height: 350.0)
+        .frame(width: 150.0, height: 350.0)
         .cornerRadius(15)
     }
 }
