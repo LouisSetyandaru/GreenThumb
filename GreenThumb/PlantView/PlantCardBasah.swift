@@ -10,9 +10,9 @@ import SwiftUI
 struct PlantCardBasah: View {
     var plant: Plant
     var body: some View {
+        
         VStack(alignment: .center) {
             
-          
             HStack {
                 
                 ZStack {
@@ -20,49 +20,49 @@ struct PlantCardBasah: View {
                     Circle()
                         .fill(Color(red: 0.28627450980392155, green: 0.5215686274509804, blue: 0.3254901960784314).opacity(0.11))
                         .frame(width: 90.0, height: 90.0)
-                        .offset(x: -22, y: -37)
+                        .offset(x: -37, y: -200)
                     
                     // Plant Image
                     CircleImage(image: Image(plant.image))
-                    .frame(width: 90, height: 130)
-                    .padding(.leading)
+                        .frame(width:70, height: 420)
+                        .padding(.leading)
+                        .offset(x: 37, y: 40)
                 }
                 
-                
                 VStack(alignment: .leading) {
+                    
                     Text(plant.name)
                         .font(.callout)
                         .fontWeight(.semibold)
-                        .foregroundColor(Color(red: 0.28627450980392155, green: 0.5215686274509804, blue: 0.3254901960784314))
-                        .padding(.leading, 15.0)
+                        .foregroundColor(.white)
+                        .padding(.leading, 5.0)
                         .padding(.top)
                     
-                    Text(plant.description)
+                    Text(plant.latin_name)
                         .font(.footnote)
-                        .foregroundColor(.gray)
-                        .padding([.leading, .bottom, .trailing])
-                        
-                }
-                ZStack {
-                    // Background Circle
-                    Circle()
-                        .fill(Color(red: 0.28627450980392155, green: 0.5215686274509804, blue: 0.3254901960784314).opacity(0.11))
-                        .frame(width: 90.0, height: 90.0)
-                        .offset(x: 12, y: -27)
+                        .foregroundColor(.white)
+                        .padding(.leading, 5.0)
+                        .padding([.bottom, .trailing])
                     
-                    // Plant Image
-                    CircleImage(image: Image("water-drop-icon"))
-                    .frame(width: 30, height: 40)
-                    .offset(x: 10, y: -27)
-               
                 }
+                .frame(width: 180)
+                .background(Color(red: 0.28627450980392155, green: 0.5215686274509804, blue: 0.3254901960784314).opacity(0.7))
+                .offset(x: -30, y: 140)
+                
+                ZStack {
+                        
+                    CircleImage(image: Image("water-drop-icon"))
+                        .frame(width: 30, height: 40)
+                }
+                .offset(x: -95, y: -130)
+                
             }
-            .frame(width: 350.0, height: 130.0)
-
+            .frame(width: 150.0, height: 350.0)
+            
             
         }
         .background(Color(.systemGreen).opacity(0.1))
-        .frame(width: 350.0, height: 130.0)
+        .frame(width: 150.0, height: 350.0)
         .cornerRadius(15)
     }
 }
@@ -72,8 +72,8 @@ struct PlantCardBasah: View {
     
     return Group {
         PlantCardBasah(plant: plants[6])
-
+        
     }
     
-
+    
 }
