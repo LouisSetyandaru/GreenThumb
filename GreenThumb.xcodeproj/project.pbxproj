@@ -23,6 +23,7 @@
 		04E186D02BF72EE900779890 /* PlantCardBasah.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E186CF2BF72EE900779890 /* PlantCardBasah.swift */; };
 		241DE1DB2BFFA6EF0039DF11 /* DetailViewMac.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241DE1DA2BFFA6EF0039DF11 /* DetailViewMac.swift */; };
 		24A646CF2BF79E80004C0906 /* DetailPlantView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24A646CE2BF79E80004C0906 /* DetailPlantView.swift */; };
+		3FD1E9412C0843D9004B78D8 /* FormUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD1E9402C0843D8004B78D8 /* FormUser.swift */; };
 		A20A62F92BFE1E5E00963A72 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0465AACB2BEE0C83001331D1 /* Assets.xcassets */; };
 		A20A62FA2BFE26E300963A72 /* GreenThumbApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0465AAC72BEE0C81001331D1 /* GreenThumbApp.swift */; };
 		A20A62FB2BFE26E300963A72 /* GreenThumbApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0465AAC72BEE0C81001331D1 /* GreenThumbApp.swift */; };
@@ -89,6 +90,7 @@
 		04E186CF2BF72EE900779890 /* PlantCardBasah.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantCardBasah.swift; sourceTree = "<group>"; };
 		241DE1DA2BFFA6EF0039DF11 /* DetailViewMac.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewMac.swift; sourceTree = "<group>"; };
 		24A646CE2BF79E80004C0906 /* DetailPlantView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPlantView.swift; sourceTree = "<group>"; };
+		3FD1E9402C0843D8004B78D8 /* FormUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormUser.swift; sourceTree = "<group>"; };
 		A29CBA5A2BF5EE5D00DE2F8F /* Plant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plant.swift; sourceTree = "<group>"; };
 		A2B431842BF5F3210075FE10 /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
 		A2B431892BF5F3860075FE10 /* PlantCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantCard.swift; sourceTree = "<group>"; };
@@ -154,6 +156,7 @@
 				A29CBA5D2BF5EE7900DE2F8F /* Model */,
 				A29CBA5C2BF5EE6900DE2F8F /* Data */,
 				0465AAC72BEE0C81001331D1 /* GreenThumbApp.swift */,
+				3FD1E9402C0843D8004B78D8 /* FormUser.swift */,
 				A2B4318D2BF610AD0075FE10 /* HomeView.swift */,
 				04E186CD2BF72D1100779890 /* MyPlantsView.swift */,
 				0465AAC92BEE0C81001331D1 /* ContentView.swift */,
@@ -420,6 +423,7 @@
 				041245072C06EDCA004344C1 /* DetailOwnPlantView.swift in Sources */,
 				04E186D02BF72EE900779890 /* PlantCardBasah.swift in Sources */,
 				0465AAC82BEE0C81001331D1 /* GreenThumbApp.swift in Sources */,
+				3FD1E9412C0843D9004B78D8 /* FormUser.swift in Sources */,
 				A2B4318A2BF5F3860075FE10 /* PlantCard.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
