@@ -104,7 +104,7 @@ struct HomeView: View {
     
     private var allPlantsSection: some View {
         VStack(alignment: .leading) {
-            Text("All Plants")
+            Text("Plants List")
                 .font(.title2)
                 .fontWeight(.bold)
                 .padding(.horizontal)
