@@ -11,7 +11,7 @@ struct DetailOwnPlantView: View {
     var plant: Plant
     
     @State private var wateringCount: Int
-    @State private var showingAlert = false
+
     
     init(plant: Plant) {
         self.plant = plant
@@ -30,7 +30,6 @@ struct DetailOwnPlantView: View {
         }
     }
     
-    // Function to create the plant detail view
     func plantDetailView() -> some View {
         VStack {
             Spacer().frame(height: 750)
@@ -67,7 +66,7 @@ struct DetailOwnPlantView: View {
                     
                     Divider()
                     
-                    doneWateringButton()
+                    WateringButton(wateringCount: $wateringCount)
                     
                     Spacer().frame(height: 30)
                 }
@@ -77,8 +76,7 @@ struct DetailOwnPlantView: View {
             }
         }
     }
-    
-    // Function to create the plant info view
+
     func plantInfoView() -> some View {
         VStack {
             Spacer().frame(height: 80)
@@ -113,7 +111,6 @@ struct DetailOwnPlantView: View {
         .background(Color(.systemGreen).opacity(0.1))
     }
     
-    // Helper function to create plant info text
     func plantInfoText(_ title: String, _ value: String) -> some View {
         VStack(alignment: .leading) {
             Text(title)
@@ -129,7 +126,6 @@ struct DetailOwnPlantView: View {
         }
     }
     
-    // Function to create the watered count view
     func wateredCountView() -> some View {
         HStack {
             Text("Watered Count")
@@ -149,7 +145,6 @@ struct DetailOwnPlantView: View {
         .frame(maxWidth: 350.0, alignment: .leading)
     }
     
-    // Function to create the watered time view
     func wateredTimeView() -> some View {
         HStack {
             Text("Watered Time")
@@ -167,26 +162,6 @@ struct DetailOwnPlantView: View {
                 .frame(maxWidth: 70.0, alignment: .leading)
         }
         .frame(maxWidth: 350.0, alignment: .leading)
-    }
-    
-    // Function to create the "Done Watering" button
-    func doneWateringButton() -> some View {
-        HStack(alignment: .center) {
-            Button(action: {
-                self.showingAlert = true
-                wateringCount += 1
-            }) {
-                Text("Done Watering")
-                    .padding()
-                    .padding(.horizontal, 120.0)
-                    .background(Color(red: 73/255, green: 133/255, blue: 83/255))
-                    .foregroundColor(Color.white)
-                    .cornerRadius(20)
-            }
-            .alert(isPresented: $showingAlert) {
-                Alert(title: Text("Watering Done"), message: Text("You have watered the plant."), dismissButton: .default(Text("OK")))
-            }
-        }
     }
 }
 

@@ -38,6 +38,7 @@
 		24A646CF2BF79E80004C0906 /* DetailPlantView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24A646CE2BF79E80004C0906 /* DetailPlantView.swift */; };
 		24B477B32C121A37000F7340 /* PlantThisButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B477B22C121A37000F7340 /* PlantThisButton.swift */; };
 		24B477BF2C1225F2000F7340 /* PlantThisButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B477B22C121A37000F7340 /* PlantThisButton.swift */; };
+		24B477C32C130921000F7340 /* WateringButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B477C22C130921000F7340 /* WateringButton.swift */; };
 		24DADFFD2C10CDC2006A161A /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24DADFFC2C10CDC2006A161A /* LoadingView.swift */; };
 		24EA83B32C11B76800749850 /* DetailOwnViewMac.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24EA83B22C11B76700749850 /* DetailOwnViewMac.swift */; };
 		A20A62F92BFE1E5E00963A72 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0465AACB2BEE0C83001331D1 /* Assets.xcassets */; };
@@ -114,6 +115,7 @@
 		242A83712C0C94ED00B88590 /* AddedPlantViewMac.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddedPlantViewMac.swift; sourceTree = "<group>"; };
 		24A646CE2BF79E80004C0906 /* DetailPlantView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPlantView.swift; sourceTree = "<group>"; };
 		24B477B22C121A37000F7340 /* PlantThisButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantThisButton.swift; sourceTree = "<group>"; };
+		24B477C22C130921000F7340 /* WateringButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WateringButton.swift; sourceTree = "<group>"; };
 		24DADFFC2C10CDC2006A161A /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		24EA83B22C11B76700749850 /* DetailOwnViewMac.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailOwnViewMac.swift; sourceTree = "<group>"; };
 		A29CBA5A2BF5EE5D00DE2F8F /* Plant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plant.swift; sourceTree = "<group>"; };
@@ -283,6 +285,7 @@
 				A2B4318B2BF607760075FE10 /* CircleImage.swift */,
 				045046492C074BC900A92567 /* MapView.swift */,
 				24B477B22C121A37000F7340 /* PlantThisButton.swift */,
+				24B477C22C130921000F7340 /* WateringButton.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -449,6 +452,7 @@
 			files = (
 				0465AACA2BEE0C81001331D1 /* ContentView.swift in Sources */,
 				A29CBA5B2BF5EE5D00DE2F8F /* Plant.swift in Sources */,
+				24B477C32C130921000F7340 /* WateringButton.swift in Sources */,
 				04EBBA9E2C096832003E4707 /* StepToPlant.swift in Sources */,
 				A2B431852BF5F3210075FE10 /* ModelData.swift in Sources */,
 				24DADFFD2C10CDC2006A161A /* LoadingView.swift in Sources */,
