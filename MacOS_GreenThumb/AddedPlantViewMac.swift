@@ -21,10 +21,12 @@ struct AddedPlantViewMac: View {
                     Image("addedplant")
                         .resizable()
                         .aspectRatio(contentMode: .fit)
-                        .frame(width: 250, height: 150)
+                        .frame(width: 350, height: 250)
+                        .padding(.bottom, 30)
                     
                     Text("\(plant.name) has been added successfully! Remember to care for it—plants bring life to your home! 🌱")
                         .font(.headline)
+                        .font(.system(size: 30))
                         .foregroundColor(.gray)
                         .padding(.horizontal, 6)
                         .padding(.bottom, 70)
