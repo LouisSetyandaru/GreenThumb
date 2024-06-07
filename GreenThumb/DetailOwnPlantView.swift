@@ -180,9 +180,9 @@ struct DetailOwnPlantView: View {
                                 
                                 HStack(alignment: .center) {
                                     Button(action: {
-                                        
                                         self.showingAlert = true
                                         wateringCount += 1
+                                        
                                         
                                     }) {
                                         Text("Done Watering")
