@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct GreenThumbApp: App {
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+    @State private var modelData = ModelData()
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView().environment(modelData)
+            
         }
     }
 }

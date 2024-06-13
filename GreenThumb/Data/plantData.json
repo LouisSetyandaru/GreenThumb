@@ -1,0 +1,236 @@
+[
+    {
+        "id": 1,
+        "name": "Mawar",
+        "plant_type": "Bunga",
+        "latin_name": "Rosa",
+        "habitat": "Iklim sedang",
+        "description": "Mawar adalah tanaman bunga yang berasal dari belahan bumi utara dan biasanya tumbuh di daerah yang beriklim sedang.",
+        "isFeatured": true,
+        "isOutdoor": true,
+        "age": 5,
+        "plantingAge": 2,
+        "wateringTime": "07:00",
+        "wateringCount": 0,
+        "plantingSteps": "1. Pilih lokasi yang cerah. 2. Gali lubang sedalam 30 cm. 3. Tanam bibit mawar. 4. Siram secara teratur.",
+        "isWatered": true,
+        "image": "mawar",
+        "isOnList": false,
+        "coordinates": {
+            "longitude": 112.719835,
+            "latitude": -7.293048
+        },
+        "store_image":"fun_farm",
+        "store_name": "Fun Farm",
+        "store_address":"Jl. Raya Manyar Kertoarjo No. 114-118, Mulyorejo, Kota Surabaya, Jawa Timur 60291"
+        
+    },
+    {
+        "id": 2,
+        "name": "Lidah Buaya",
+        "plant_type": "Sukulen",
+        "latin_name": "Aloe vera",
+        "habitat": "Tropis dan subtropis",
+        "description": "Lidah buaya adalah tanaman yang berasal dari daerah tropis dan subtropis, dikenal karena manfaatnya untuk kesehatan kulit.",
+        "isFeatured": false,
+        "isOutdoor": false,
+        "age": 10,
+        "plantingAge": 1,
+        "wateringTime": "08:00",
+        "wateringCount": 0,
+        "plantingSteps": "1. Siapkan pot dengan tanah berpasir. 2. Tanam anakan lidah buaya. 3. Letakkan di tempat yang terkena sinar matahari tidak langsung. 4. Siram secukupnya.",
+        "isWatered": true,
+        "image": "lidah_buaya",
+        "isOnList": false,
+        "coordinates": {
+            "longitude": 112.675608,
+            "latitude": -7.289060
+        },
+        "store_image":"flora_fauna",
+        "store_name": "Flora Fauna",
+        "store_address":"Jl. Mayjen Jonosewoyo No. 2, Dukuh Pakis, Kec. Dukuhpakis, Kota Surabaya, Jawa Timur 60226"
+        
+    },
+    {
+        "id": 3,
+        "name": "Anggrek",
+        "plant_type": "Bunga",
+        "latin_name": "Orchidaceae",
+        "habitat": "Tropis dan subtropis",
+        "description": "Anggrek adalah tanaman hias yang berasal dari kawasan tropis dan subtropis, dikenal karena keindahan bunganya.",
+        "isFeatured": false,
+        "isOutdoor": false,
+        "age": 7,
+        "plantingAge": 1,
+        "wateringTime": "09:00",
+        "wateringCount": 0,
+        "plantingSteps": "1. Siapkan pot dengan media tanam khusus anggrek. 2. Tanam bibit anggrek. 3. Letakkan di tempat yang teduh. 4. Siram dengan air yang mengalir.",
+        "isWatered": false,
+        "image": "anggrek",
+        "isOnList": true,
+        "coordinates": {
+            "longitude": 112.738576,
+            "latitude": -7.262399
+        },
+        "store_image":"green_vibes",
+        "store_name": "Green Vibes",
+        "store_address":"Jl. Basuki Rachmat No. 85 - 107, Genteng, Kec. Genteng, Kota Surabaya, Jawa Timur 60271 "
+        
+    },
+    {
+        "id": 4,
+        "name": "Tomat",
+        "plant_type": "Buah",
+        "latin_name": "Solanum lycopersicum",
+        "habitat": "Amerika Selatan",
+        "description": "Tomat adalah tanaman buah yang berasal dari Amerika Selatan, sering digunakan dalam berbagai masakan.",
+        "isFeatured": false,
+        "isOutdoor": true,
+        "age": 1,
+        "plantingAge": 0,
+        "wateringTime": "06:00",
+        "wateringCount": 0,
+        "plantingSteps": "1. Siapkan bibit tomat. 2. Tanam di tanah yang subur. 3. Siram secara teratur. 4. Beri pupuk setiap dua minggu.",
+        "isWatered": true,
+        "image": "tomat",
+        "isOnList": false,
+        "coordinates": {
+            "longitude": 112.734284,
+            "latitude": -7.309135
+        },
+        "store_image":"premium_seeds",
+        "store_name": "Premium Seeds",
+        "store_address":"Jl. Raya Bratang Bindoro No. 31, Surabaya, Jawa Timur 60272 "
+        
+    },
+    {
+        "id": 5,
+        "name": "Kaktus",
+        "plant_type": "Sukulen",
+        "latin_name": "Cactaceae",
+        "habitat": "Daerah kering di Amerika",
+        "description": "Kaktus adalah tanaman yang berasal dari daerah kering di Amerika, dikenal karena kemampuannya menyimpan air.",
+        "isFeatured": false,
+        "isOutdoor": true,
+        "age": 20,
+        "plantingAge": 3,
+        "wateringTime": "18:00",
+        "wateringCount": 0,
+        "plantingSteps": "1. Pilih pot dengan drainase baik. 2. Tanam kaktus di tanah yang berpasir. 3. Letakkan di tempat yang terkena sinar matahari langsung. 4. Siram sangat jarang.",
+        "isWatered": false,
+        "image": "kaktus",
+        "isOnList": false,
+        "coordinates": {
+            "longitude": 112.748604,
+            "latitude": -7.264679
+        },
+        "store_image":"true_garden",
+        "store_name": "True Garden",
+        "store_address":"Jl. Arjuno No. 90-92, Wonokromo, Kec. Wonokromo, Kota Surabaya, Jawa Timur 60241"
+        
+    },
+    {
+        "id": 6,
+        "name": "Mint",
+        "plant_type": "Herbal",
+        "latin_name": "Mentha",
+        "habitat": "Eropa dan Asia",
+        "description": "Mint adalah tanaman yang berasal dari daerah Eropa dan Asia, sering digunakan sebagai bumbu dan untuk minuman.",
+        "isFeatured": false,
+        "isOutdoor": false,
+        "age": 2,
+        "plantingAge": 0,
+        "wateringTime": "07:30",
+        "wateringCount": 0,
+        "plantingSteps": "1. Siapkan pot dengan tanah yang subur. 2. Tanam bibit mint. 3. Letakkan di tempat yang teduh. 4. Siram secara teratur.",
+        "isWatered": false,
+        "image": "mint",
+        "isOnList": false,
+        "coordinates": {
+            "longitude": 112.727544,
+            "latitude": -7.345515
+        },
+        "store_image":"flora_paradise",
+        "store_name": "Flora's Paradise",
+        "store_address":"Jl. Ahmad Yani No. 288, Dukuh Menanggal, Kec. Gayungan, Kota Surabaya, Jawa Timur 60231"
+        
+    },
+    {
+        "id": 7,
+        "name": "Bambu",
+        "plant_type": "Rumput-rumputan",
+        "latin_name": "Bambusoideae",
+        "habitat": "Asia Timur",
+        "description": "Bambu adalah tanaman yang berasal dari Asia Timur, dikenal karena pertumbuhannya yang cepat dan kekuatannya.",
+        "isFeatured": true,
+        "isOutdoor": true,
+        "age": 15,
+        "plantingAge": 2,
+        "wateringTime": "05:00",
+        "wateringCount": 0,
+        "plantingSteps": "1. Pilih lokasi yang luas. 2. Tanam bibit bambu di tanah yang subur. 3. Siram secara teratur. 4. Beri pupuk organik setiap bulan.",
+        "isWatered": true,
+        "image": "bambu",
+        "isOnList": true,
+        "coordinates": {
+            "longitude": 112.728379,
+            "latitude": -7.338584
+        },
+        "store_image":"happy_bloom",
+        "store_name": "Happy Bloom",
+        "store_address":"Jalan Ahmad Yani No. 288, Dukuh Menanggal, Gayungan, Surabaya, Jawa Timur 60231"
+        
+    },
+    {
+        "id": 8,
+        "name": "Lavender",
+        "plant_type": "Herbal",
+        "latin_name": "Lavandula",
+        "habitat": "Mediterania",
+        "description": "Lavender adalah tanaman yang berasal dari kawasan Mediterania, dikenal karena aroma dan manfaatnya sebagai pengusir serangga.",
+        "isFeatured": false,
+        "isOutdoor": true,
+        "age": 5,
+        "plantingAge": 1,
+        "wateringTime": "08:30",
+        "wateringCount": 0,
+        "plantingSteps": "1. Siapkan tanah yang berpasir. 2. Tanam bibit lavender. 3. Letakkan di tempat yang terkena sinar matahari penuh. 4. Siram secukupnya.",
+        "isWatered": true,
+        "image": "lavender",
+        "isOnList": false,
+        "coordinates": {
+            "longitude": 112.750409,
+            "latitude": -7.261874
+        },
+        "store_image": "tanamanku",
+        "store_name": "Tanamanku",
+        "store_address": "Jl. Walikota Mustajab No. 1, Ketabang, Kec. Genteng, Kota Surabaya, Jawa Timur 60241"
+        
+    },
+    {
+        "id": 9,
+        "name": "Bunga Matahari",
+        "plant_type": "Bunga",
+        "latin_name": "Helianthus",
+        "habitat": "Amerika Utara",
+        "description": "Bunga matahari adalah tanaman yang berasal dari Amerika Utara, dikenal karena bunganya yang besar dan berwarna kuning cerah.",
+        "isFeatured": true,
+        "isOutdoor": true,
+        "age": 3,
+        "plantingAge": 1,
+        "wateringTime": "09:30",
+        "wateringCount": 0,
+        "plantingSteps": "1. Siapkan pot dengan tanah yang subur dan drainase baik. 2. Tanam biji bunga matahari. 3. Letakkan di tempat yang terkena sinar matahari langsung. 4. Siram secara teratur.",
+        "isWatered": false,
+        "image": "bungamatahari",
+        "isOnList": true,
+        "coordinates": {
+            "longitude": 112.680920,
+            "latitude": -7.285924
+        },
+        "store_image":"hijau_lestari",
+        "store_name": "Hijau Lestari",
+        "store_address":"Jl. Mayjen Yono Suwoyo No. 9, Dukuhpakis, Kec. Dukuhpakis, Kota Surabaya, Jawa Timur 60226"
+        
+    }
+]
